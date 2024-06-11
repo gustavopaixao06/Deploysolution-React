@@ -1,5 +1,5 @@
 import './footer.css'
-import { FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 import Whatsapp from "../../../public/img/icon-what.svg"
 import Instagram from "../../../public/img/icon-insta.svg"
 
