@@ -1,7 +1,7 @@
 import './footer.css'
 import { FaInstagram } from "react-icons/fa";
-import  Whatsapp  from "../../../public/img/icon-what.svg"
-import  Instagram  from "../../../public/img/icon-insta.svg"
+import Whatsapp from "../../../public/img/icon-what.svg"
+import Instagram from "../../../public/img/icon-insta.svg"
 
 export function Footer() {
     return (
@@ -32,10 +32,18 @@ export function Footer() {
                         </div>
                         <div className='nav'>
                             <ul>
-                             <li><a href="/">Home</a> </li>
-                             <li><a href="/sobre">Sobre</a></li>
-                             <li><a href="/servico">Serviços</a></li>
-                             <li><a href="/contato"> Contato</a></li>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/sobre">Sobre</Link>
+                                </li>
+                                <li>
+                                    <Link to="/servico">Serviços</Link>
+                                </li>
+                                <li>
+                                    <Link to="/contato">Contato</Link>
+                                </li>
                             </ul>
                         </div>
                     </section>
@@ -44,7 +52,7 @@ export function Footer() {
                             <h1>Nossas redes</h1>
                             <div className="icons">
                                 <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
-                                <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>    
+                                <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
                             </div>
                         </div>
                     </section>
@@ -58,9 +66,9 @@ export function Footer() {
 
             </footer>
 
-           
 
-            
+
+
         </>
     )
 }
