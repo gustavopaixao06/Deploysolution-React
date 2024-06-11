@@ -65,7 +65,7 @@ export function Servico() {
                 </div>
 
                 <div className='cartaoSete'>
-                    <Link to="/seguranca"><img src={seguranca} alt="" /></Link>
+                    <Link to="/seguranca" id='img1'><img src={seguranca} alt="" /></Link>
                     <Link to="/seguranca"><h2>Segurança Eletrônica</h2></Link>
                 </div>
 
