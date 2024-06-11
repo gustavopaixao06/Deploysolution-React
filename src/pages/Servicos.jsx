@@ -7,6 +7,7 @@ import sala from '../../public/img/sala.png'
 import rede from '../../public/img/rede.png'
 import wifi from '../../public/img/wifi.png'
 import seguranca from '../../public/img/seguranca.png'
+import { Link } from 'react-router-dom'
 
 export function Servico() {
     return (
@@ -34,38 +35,38 @@ export function Servico() {
             <section className='tres'>
                 <div className="grupo1">
                     <div className='cartaoUm'>
-                        <a id='img1' href="/iluminacao"><img src={iluminacao} alt="" /></a>
-                        <h2>Iluminação Inteligente</h2>
+                        <Link to="/iluminacao" id='img1'><img src={iluminacao} alt="" /></Link>
+                        <Link to="/iluminacao"><h2>Iluminação Inteligente</h2></Link>
                     </div>
                     <div className='cartaoDois'>
-                        <a id='img1' href="/ambientacao"><img src={ambientacao} alt="" /></a>
-                        <h2>Ambientação Áudio e <br /> Vídeo</h2>
+                        <Link to="/ambientacao" id='img1'><img src={ambientacao} alt="" /></Link>
+                        <Link to="/ambientacao"><h2>Ambientação Áudio e <br /> Vídeo</h2></Link>
                     </div>
                     <div className='cartaoTres'>
-                        <a id='img1' href="/controle"><img src={controle} alt="" /></a>
-                        <h2>Controle de Iluminação <br /> e Persianas</h2>
+                        <Link to="/controle" id='img1'><img src={controle} alt="" /></Link>
+                        <Link to="/controle"><h2>Controle de Iluminação <br /> e Persianas</h2></Link>
                     </div>
                 </div>
 
                 <div className="grupo2">
                     <div className='cartaoQuatro'>
-                        <a id='img1' href="/sala"><img src={sala} alt="" /></a>
-                        <h2>Sala de Cinema <br /> Personalizada</h2>
+                    <Link to="/sala" id='img1'><img src={sala} alt="" /></Link>
+                    <Link to="/sala"><h2>Sala de Cinema <br /> Personalizada</h2></Link>
                     </div>
                     <div className='cartaoCinco'>
-                        <a id='img1' href="/rede"><img src={rede} alt="" /></a>
-                        <h2>Rede Cabeada</h2>
+                        <Link to="/rede" id='img1'><img src={rede} alt="" /></Link>
+                        <Link to="/rede"><h2>Rede Cabeada</h2></Link>    
                     </div>
                     <div className='cartaoSeis'>
-                        <a id='img1' href="/wifi"><img src={wifi} alt="" /></a>
-                        <h2>Wi-Fi Avançado</h2>
+                        <Link to="/wifi" id='img1'><img src={wifi} alt="" /></Link>
+                        <Link to="/wifi"><h2>Wi-Fi Avançado</h2></Link>
                     </div>
 
                 </div>
 
                 <div className='cartaoSete'>
-                    <a id='img1' href="/seguranca"><img src={seguranca} alt="" /></a>
-                    <h2>Segurança Eletrônica</h2>
+                    <Link to="/seguranca"><img src={seguranca} alt="" /></Link>
+                    <Link to="/seguranca"><h2>Segurança Eletrônica</h2></Link>
                 </div>
 
             </section>

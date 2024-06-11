@@ -9,6 +9,7 @@ import yamaha from '../../public/img/Yamaha.png'
 import stealte from '../../public/img/stealte.png'
 import advanced from '../../public/img/advanced.png'
 import origin from '../../public/img/origin.png'
+import { Link } from 'react-router-dom'
 
 export function Home() {
     return (
@@ -19,7 +20,7 @@ export function Home() {
                     <p>Conheça a Deploy e desfrute da praticidade e do <br /> conforto de uma casa inteligente com nossas <br /> tecnologias de última geração.</p>
 
                     <div className='botao'>
-                        <a href="/servico"><button>Nossos Serviços</button></a>
+                        <Link to="/servico"><button>Nossos Serviços</button></Link>
                     </div>
                 </div>
 
@@ -42,7 +43,7 @@ export function Home() {
                         trabalho satisfatório aos nossos clientes, fornecemos canais de comunicação abertos durante cada projeto.</p>
 
                     <div className='botao-2'>
-                        <a href="/sobre"><button>Saiba Mais</button></a>
+                        <Link to="/sobre"><button>Saiba Mais</button></Link>
                     </div>
                 </div>
             </section>
