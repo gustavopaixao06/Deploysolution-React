@@ -1,5 +1,6 @@
 import '../assets/css/Controle.css'
 import controleIluminacao from '../../public/img/controleIluminacao.png'
+import { Link } from 'react-router-dom'
 
 export function Controle() {
     return (
@@ -32,7 +33,7 @@ export function Controle() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>

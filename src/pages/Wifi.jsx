@@ -1,5 +1,6 @@
 import '../assets/css/Wifi.css'
 import wifi from '../../public/img/wi-fi.png'
+import { Link } from 'react-router-dom'
 
 export function Wifi() {
     return (
@@ -35,7 +36,7 @@ export function Wifi() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>

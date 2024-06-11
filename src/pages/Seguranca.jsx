@@ -1,5 +1,6 @@
 import '../assets/css/Iluminacao.css'
 import segurancaEletronica from '../../public/img/segurancaEletronica.png'
+import { Link } from 'react-router-dom'
 
 export function Seguranca() {
     return (
@@ -34,7 +35,7 @@ export function Seguranca() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>

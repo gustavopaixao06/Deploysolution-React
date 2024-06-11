@@ -1,5 +1,6 @@
 import '../assets/css/Ambientacao.css'
 import imagem2 from '../../public/img/image 17.svg'
+import { Link } from 'react-router-dom'
 
 
 export function Ambientacao() {
@@ -35,7 +36,7 @@ export function Ambientacao() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>

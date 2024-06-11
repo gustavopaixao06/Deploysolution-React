@@ -1,5 +1,6 @@
 import '../assets/css/Iluminacao.css'
 import imagem1 from '../../public/img/imagem1.png'
+import { Link } from 'react-router-dom'
 
 export function Iluminacao() {
     return (
@@ -31,7 +32,7 @@ export function Iluminacao() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>

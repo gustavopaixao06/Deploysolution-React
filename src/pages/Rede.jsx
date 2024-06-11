@@ -1,5 +1,6 @@
 import '../assets/css/Rede.css'
 import redeCabeada from '../../public/img/redeCabeada.png'
+import { Link } from 'react-router-dom'
 
 export function Rede() {
     return (
@@ -34,7 +35,7 @@ export function Rede() {
 
             <section className='button'>
                 <div className='botao-3'>
-                    <a href="/contato"><button>Faça seu orçamento aqui!</button></a>
+                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
         </>
