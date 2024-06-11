@@ -1,0 +1,55 @@
+header > .centro{/* Usando o header para que as configurações do display flex fique só no primeiro centro */
+    
+    display: flex;/* Flex permite que o elemento se adequem de acordo a tela do dispositivo */
+
+}
+
+.logo{
+    padding: 2vw 0vw 0vw 2vw;
+}
+
+.logo img{
+    width: 12vw;
+}
+
+.menu-desktop{
+
+    text-align: right;
+    width: 90%;
+    padding: 3.6vw;
+  
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.menu-desktop a::after {
+    content: "";
+    width: 0%;
+    height: 0.2vw;
+    background-color: #1e4982;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-desktop a:hover::after{
+    width: 100%;
+}
+
+.menu-desktop li{/* Configurando a lista */
+
+    display: inline-block;/*  deixando o menu em linha*/
+    font-size: 1.6vw;
+    margin-right: 4vw;
+    color: white;
+
+}
+
+
+
+

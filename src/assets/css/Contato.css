@@ -1,0 +1,83 @@
+.reta{
+    width: 100%;
+    border-top: 0.078125vw solid #bbb;
+    border-radius: 0.078125vw;
+}
+
+.box-container{
+    width: 100%;
+    margin-bottom: 6.510416666666667vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.faleConosco{
+    width: 40%;
+    height: 60vw;
+    background-image: url("../../public/img/fale.png");
+    border-top-right-radius: 1.0416666666666667vw;
+    border-bottom-right-radius: 1.0416666666666667vw;
+}
+
+.faleConosco h1{
+    color: white;
+    margin-left: 2.6041666666666665vw;
+    font-size: 2.6041666666666665vw;
+    padding-top: 18vw;
+}
+
+.faleConosco > p{
+    color: white;
+    margin-left: 2.6041666666666665vw;
+    font-size:  1.0416666666666667vw;
+    padding-top: 1vw;
+}
+
+.faleIcon {
+    color: white;
+    margin-left: 2.6041666666666665vw;
+    margin-top: 0.5208333333333334vw;
+    font-size: 1.6666666666666667vw;
+}
+
+.faleIcon > p{
+    color: white;
+    margin-left: 1.8229166666666667vw;
+    margin-top: -2.2395833333333335vw;
+    font-size: 1.0416666666666667vw;
+}
+
+.forms-contato{
+    width: 60%;
+   
+}
+
+.inputs input, label{
+    width: 70%;
+    display: block;
+
+}
+
+#name, #Email, #surname, #telephone, #assunto, #mensagem{
+    margin-left:  3.2552083333333335vw;
+    
+}
+
+#butom {
+    background-color: #09274F;
+    border-radius:0.5vw;
+    border: none;
+    color: white;
+    padding: 0.771875vw  3.0625vw;
+    text-align: center;
+    margin-left: 3.130208333333336vw;
+    cursor: pointer;
+    font-size: 0.9625vw; 
+    margin-top:  1.3020833333333333vw;
+}
+
+#butom:hover{
+    color: #09274F;
+    background-color: #FFFF;
+    transition: 0.5s ease-in-out;
+}

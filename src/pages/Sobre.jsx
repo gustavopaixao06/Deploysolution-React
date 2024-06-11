@@ -1,0 +1,124 @@
+import '../assets/css/Sobre.css'
+import imgSobre from '../../public/img/sobre.png'
+import imgHistoria from '../../public/img/historia.png'
+import arrow from '../../public/img/Vector.png'
+import arrow2 from '../../public/img/Vector (1).png'
+
+export function Sobre() {
+    return (
+        <>
+            <section className='primeira-parte'>
+                <div className="sobre">
+                    <img src={imgSobre} alt="" />
+                </div>
+
+            </section>
+
+            <section className='segunda-parte'>
+                <div className="historias">
+                    <h1>NOSSA HISTÓRIA</h1>
+                    <p>Ao longo dos anos, aprendemos que um ótimo serviço <br /> começa e termina com profissionais
+                        experientes e <br /> amigáveis, o que explica nosso rigoroso processo de <br /> contratação.
+                        Acreditamos que nossa equipe seja a melhor <br /> do setor e temos total confiança em cada pessoa
+                        que <br /> fornece nossos serviços.</p>
+
+                    <p>O(A) Deploy finaliza cada projeto dentro do prazo e com o <br /> maior nível de qualidade. Com foco em
+                        serviços <br /> personalizados, preços competitivos e satisfação do <br /> cliente, estamos sempre nos esforçando para
+                        atender e <br /> superar nossas expectativas.</p>
+                </div>
+                <div className="img-historia">
+                    <img src={imgHistoria} alt="" />
+                </div>
+            </section>
+
+            {/*  <section className='terceira-parte'>
+
+                <div className="icon">
+                   <img src={arrow} alt="" />
+                </div>
+
+                <div className="cards">
+                    <div className="container">
+                        <h1>Recomendou o serviço!</h1>
+                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
+                            você, seus serviços ou o <br /> seu negócio. <br />
+                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
+                        <h1>Giovanna Sousa</h1>
+                    </div>
+
+                </div>
+
+                <div className="cards">
+                    <div className="container">
+                        <h1>Recomendou o serviço!</h1>
+                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
+                            você, seus serviços ou o <br /> seu negócio. <br />
+                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
+                        <h1>Giovanna Sousa</h1>
+                    </div>
+
+                </div>
+
+                <div className="cards">
+                    <div className="container">
+                        <h1>Recomendou o serviço!</h1>
+                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
+                            você, seus serviços ou o <br /> seu negócio. <br />
+                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
+                        <h1>Giovanna Sousa</h1>
+                    </div>
+
+                </div>
+
+                <div className="icon2">
+                <img src={arrow2} alt="" />
+                </div>
+
+
+            </section> */}
+
+            <section className='quarta-parte'>
+                <div className="avaliar">
+                    <h1>AVALIE NOSSO SERVIÇO</h1>
+                </div>
+
+                <div className="form">
+                    <form action="https://formsubmit.co/ajax/paixaogabriel246@gmail.com" method='POST'>
+
+                        <div className="conjunto">
+                            <div className="nome">
+                                <label htmlFor="nome">Nome</label>
+                                <input type="text" name='nome' id='nome' required />
+                                <label htmlFor="email">Email</label>
+                                <input type="text" name='email' id='emial' required />
+                            </div>
+
+                            <div className="sobrenome">
+                                <label htmlFor="sobrenome">Sobrenome</label>
+                                <input type="text" name='sobrenome' id='sobrenome' required />
+                                <label htmlFor="telefone">Telefone</label>
+                                <input type="text" name='telefone' id='telefone' required />
+                            </div>
+                        </div>
+
+                        <div className="p">
+                            <p>Você nos recomendaria aos seus amigos?</p>
+                        </div>
+                        <div className="recomendacao">
+                            <input type="radio" name="recomendacao" id="" /> <span className="opcao">Sim</span>
+                            <input type="radio" name="recomendacao" id="dois" /> <span className="opcao2">Não</span>
+                        </div>
+                        <label htmlFor="depoimento">Deixe seu depoimento</label>
+
+                        <div className="depoimento">
+                            <input type="text" name='depoimento' id='depoimento' required />
+                        </div>
+
+                        <button type='submit' id='botao'>Enviar</button>
+                    </form>
+                </div>
+
+            </section >
+        </>
+    )
+}

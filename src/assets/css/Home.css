@@ -1,0 +1,194 @@
+
+.home {
+    width: 50%;
+    color: white;
+    border-top: 0.078125vw solid #bbb;
+    border-radius: 0.078125vw;
+}
+
+.parte-1 {
+    display: flex;
+}
+
+.home h1 {
+    margin-top: 3.46875vw;
+    font-size: 3vw;
+    margin-left: 1.5625vw;
+}
+
+.home p {
+    font-size: 1.8vw;
+    margin-left: 1.5625vw;
+    margin-top: 1.34375vw;
+    line-height: 3.125vw;
+    margin-bottom: 3.0625vw;
+}
+
+.botao button {
+    background-color: #09274F;
+    border-radius:1.171875vw;
+    border: none;
+    color: white;
+    padding: 1.171875vw  4.0625vw;
+    text-align: center;
+    margin: 0.3125vw 0.15625vw;
+    cursor: pointer;
+    margin-left: 1.5625vw;
+    margin-bottom: 1.5625vw;
+    font-size: 1.5625vw;
+}
+
+.botao button:hover{
+    color: #09274F;
+    background-color: #FFFF;
+    transition: 0.5s ease-in-out;
+}
+
+.primeira-img {
+    width: 50%;
+}
+
+.primeira-img img{
+    width: 100%;
+}
+
+.parte-2 {
+    background-color: #051D3C;
+    display: flex;
+    width: 100%;
+    margin-bottom:  6.510416666666667vw;
+}
+
+.imagem01 {
+    width: 30%;
+}
+
+.imagem01 img {
+    width: 100%;
+}
+
+.conhecer{
+    width: 70%;
+    margin-bottom: 4.6041666666666665vw;
+    margin-left: 6.510416666666667vw;
+}
+
+.conhecer h1{
+    font-size: 2.5vw;
+    color: white;
+    margin-left:  0.5208333333333334vw;
+    margin-top: 2.6041666666666665vw;
+    margin-bottom: 2.0833333333333335vw;
+}
+
+
+.conhecer p{
+    font-size: 1.8vw;
+    color: white;
+    margin-left:  0.5208333333333334vw;
+    line-height: 3.0833333333333335vw;
+}
+
+.botao-2 button{
+    background-color: #09274F;
+    border-radius:1.171875vw;
+    border: none;
+    color: white;
+    padding: 1.171875vw  4.0625vw;
+    text-align: center;
+    margin: 0.3125vw 0.15625vw;
+    cursor: pointer;
+    margin-left:  0.5208333333333334vw;
+    font-size: 1.5625vw; 
+    margin-top: 2.6041666666666665vw;
+
+}
+
+.botao-2 button:hover{
+    color: #09274F;
+    background-color: #FFFF;
+    transition: 0.5s ease-in-out;
+}
+
+
+.parte-3{
+    width: 100%;
+    margin-bottom: 6.510416666666667vw;
+}
+
+ .samsung{
+    width: 20%;
+    border:  0.1953125vw  solid  #051D3C; 
+    margin-left: 1.3020833333333333vw;
+    border-radius: 0.3255208333333333vw;
+    margin-bottom: 6.510416666666667vw;
+}
+ 
+.samsung img {
+    width: 90%;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin-bottom: 3.2552083333333335vw;
+    font-size: x-large;
+}
+
+.titulo > h1 {
+    font-size: 2vw;
+}
+
+ .carrossel {
+    height: 16.276041666666668vw;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+ }
+ 
+ .fornecedores {
+    display: flex;
+    width: calc(35.807291666666664vw * 8);
+    animation: scroll 15s linear infinite;
+ }
+ .samsung{
+    margin-right: 6.510416666666667vw;
+ }
+
+ .fornecedores:hover{
+    animation-play-state: paused;
+ }
+
+ @keyframes scroll {
+    0% {
+        transform:  translateX(0);
+    }
+    100%{
+        transform: translateX(calc( -16.276041666666668vw * 4));
+    }
+ }
+
+ .samsung{
+    height: 13.020833333333334vw;
+    width: 16.276041666666668vw;
+    display: flex;
+    align-items: center;
+    padding: 0.6510416666666666vw 0 0 1.6276041666666667vw;
+    perspective: 6.510416666666667vw;
+}
+
+.samsung {
+    transition: 0.5s;
+}
+
+ .samsung:hover{
+    width: 15vw; 
+    transition-timing-function: ease-out;  
+ }
+
+
+
+

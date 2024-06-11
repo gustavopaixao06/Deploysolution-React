@@ -1,0 +1,66 @@
+.falsalinha{
+    width: 50%;
+}
+
+.linha{
+    width: 50%;
+    border-top: 0.078125vw solid #bbb;
+    border-radius: 0.078125vw;
+}
+
+.iluminacao h3{
+    text-align: center;
+    margin-top: 1.5625vw;
+    color: #6D9CD8;
+    margin-bottom: 1.0416666666666667vw;
+    font-size: 1.4vw;
+
+}
+
+.iluminacao h1{
+    text-align: center;
+    color: white;
+    font-size: 2.6041666666666665vw;
+    margin-bottom: 5.208333333333333vw;
+}
+
+.sessao2 {
+    display: flex;
+}
+
+.imagem2 {
+    width:50%;
+}
+
+.imagem2 img{
+   width:50%;
+   margin-left: 18.75vw;
+   margin-bottom: 4.6041666666666665vw;
+}
+
+
+.paragrafo {
+    width: 50%;
+}
+
+.texto2 p{
+    font-size: 1.7vw;
+    color: white;
+    line-height: 2.34375vw;
+    margin-top: -0.4vw;
+}
+
+
+.botao-3 button{
+    background-color: #09274F;
+    border-radius:1.171875vw;
+    color: white;
+    padding: 1.171875vw  4.0625vw;
+    text-align: center;
+    margin: 0.3125vw 0.15625vw;
+    cursor: pointer;
+    margin-left:  0.5208333333333334vw;
+    font-size: 1.5625vw; 
+    margin-top: 2.6041666666666665vw;
+
+}

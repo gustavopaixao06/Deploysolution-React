@@ -1,0 +1,182 @@
+.um {
+    background-color: #051D3C;
+    display: flex;
+    margin-bottom: 3.6458333333333335vw;
+}
+
+.imgConzinha {
+    width: 40%;
+}
+
+.imgConzinha img {
+    width: 100%;
+}
+
+.nossoServicos {
+    width: 60%;
+    color: white;
+}
+
+.nossoServicos h1 {
+    font-size:  3.125vw;
+    margin-top:  7.8125vw;
+
+}
+
+.nossoServicos h5 {
+    font-size: 1.3020833333333333vw;
+    margin-top:  1.5625vw;  
+    font-family: "Poppins", sans-serif; 
+}
+
+.nossoServicos h1,
+h5 {
+    margin-left: 5.208333333333333vw;
+}
+
+.suaCasa {
+    color: white;
+
+}
+
+.suaCasa h1 {
+    text-align: center;
+    font-size: 1.4vw;
+    text-decoration: underline;
+    text-underline-offset: 0.5208333333333334vw;
+    margin-bottom: 3.5625vw;
+}
+
+.tres {
+    width: 100%;
+}
+
+.cartoes {
+    color: white;
+}
+
+.tres h2{
+    cursor: pointer;
+}
+
+.grupo1 {
+    display: flex;
+    margin-bottom: 11.71875vw;
+    justify-content: center;
+}
+
+#img1 > img {
+    width: 24vw;
+    height: 17.5vw;
+}
+
+.cartaoUm h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoDois h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoTres h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoQuatro h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoCinco h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoSeis h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoSete h2:hover {
+    color: #164d95;
+    transition: 0.5s ease;
+}
+
+.cartaoUm {
+    margin-right: 7.8125vw;
+}
+
+.cartaoUm h2 {
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: -10.8125vw;
+}
+
+.cartaoDois {
+    margin-right:  7.8125vw;
+}
+
+.cartaoDois h2 {
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top:-10.8125vw;
+}
+
+.cartaoTres h2 {
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: -10.8125vw;
+}
+
+.grupo2 {
+    display: flex;
+    margin-bottom:  9.375vw;
+    justify-content: center;
+}
+
+.cartaoQuatro {
+    margin-right:  7.8125vw;
+}
+
+.cartaoQuatro h2{
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: -10.8125vw;
+}
+
+.cartaoCinco {
+    margin-right: 7.8125vw;
+}
+
+.cartaoCinco h2{
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: -10.8125vw;
+}
+
+.cartaoSeis h2{
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: -10.8125vw;
+}
+
+.cartaoSete {
+    margin-left: 5.859375vw;
+    margin-bottom:12.416666666666666vw;
+}
+
+.cartaoSete h2{
+    font-size: 1.4vw;   
+    color: white;
+    margin-top:-10.8125vw;
+    margin-left:  4.114583333333333vw;
+}
