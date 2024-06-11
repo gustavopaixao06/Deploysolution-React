@@ -22,7 +22,7 @@ export function Sobre() {
                         Acreditamos que nossa equipe seja a melhor <br /> do setor e temos total confiança em cada pessoa
                         que <br /> fornece nossos serviços.</p>
 
-                    <p>O(A) Deploy finaliza cada projeto dentro do prazo e com o <br /> maior nível de qualidade. Com foco em
+                    <p> A Deploy finaliza cada projeto dentro do prazo e com o <br /> maior nível de qualidade. Com foco em
                         serviços <br /> personalizados, preços competitivos e satisfação do <br /> cliente, estamos sempre nos esforçando para
                         atender e <br /> superar nossas expectativas.</p>
                 </div>

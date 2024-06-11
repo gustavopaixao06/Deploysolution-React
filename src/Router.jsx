@@ -10,11 +10,14 @@ import { Rede } from './pages/Rede';
 import { Wifi } from './pages/Wifi';
 import { Seguranca } from './pages/Seguranca';
 import { Contato } from './pages/Contato';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 const Router = () => {
     return (
         <BrowserRouter>
+            <Header />
             <Routes>
                 <Route path="/" element={ <Home /> } />
                 <Route path='/sobre' element={ <Sobre />} />
@@ -28,6 +31,7 @@ const Router = () => {
                 <Route path='/seguranca' element={<Seguranca />}/>
                 <Route path='/contato' element={<Contato />}/>
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 };

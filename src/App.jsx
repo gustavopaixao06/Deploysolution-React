@@ -9,11 +9,7 @@ function App() {
 
   return (
     <>
-
-      <Header />
       <Router />
-      <Footer />
-
     </>
   )
 }
