@@ -1,5 +1,4 @@
 import '../assets/css/Contato.css'
-import fale from '../../public/img/fale.png'
 import { FaWhatsapp } from "react-icons/fa";
 
 

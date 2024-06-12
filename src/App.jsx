@@ -6,12 +6,7 @@ import { Footer } from './components/Footer'
 /* import { Footer } from './components/Foo' */
 
 function App() {
-
-  return (
-    <>
-      <Router />
-    </>
-  )
+  return <Router />;
 }
 
 export default App
