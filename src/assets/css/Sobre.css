@@ -207,6 +207,17 @@ label{
     transition: 0.5s ease-in-out;
 }
 
+.success, .error {
+ text-align: center;
+}
+.success {
+    color: greenyellow;
+}
+
+.error{
+    color: tomato;
+}
+
 
 
 

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Sobre } from './pages/Sobre';
 import { Servico } from './pages/Servicos';
@@ -19,17 +19,17 @@ const Router = () => {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path="/" element={ <Home /> } />
-                <Route path='/sobre' element={ <Sobre />} />
-                <Route path='/servico' element={ <Servico />} />
+                <Route path="/" element={<Home />} />
+                <Route path='/sobre' element={<Sobre />} />
+                <Route path='/servico' element={<Servico />} />
                 <Route path='/iluminacao' element={<Iluminacao />} />
-                <Route path='/ambientacao' element={<Ambientacao />}/>
-                <Route path='/controle' element={<Controle />}/>
-                <Route path='/sala' element={<Sala />}/>
-                <Route path='/rede' element={<Rede/>}/>
-                <Route path='/wifi' element={<Wifi />}/>
-                <Route path='/seguranca' element={<Seguranca />}/>
-                <Route path='/contato' element={<Contato />}/>
+                <Route path='/ambientacao' element={<Ambientacao />} />
+                <Route path='/controle' element={<Controle />} />
+                <Route path='/sala' element={<Sala />} />
+                <Route path='/rede' element={<Rede />} />
+                <Route path='/wifi' element={<Wifi />} />
+                <Route path='/seguranca' element={<Seguranca />} />
+                <Route path='/contato' element={<Contato />} />
             </Routes>
             <Footer />
         </BrowserRouter>

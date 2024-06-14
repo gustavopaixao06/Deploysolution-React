@@ -3,9 +3,80 @@ import imgSobre from '../../public/img/sobre.png'
 import imgHistoria from '../../public/img/historia.png'
 import arrow from '../../public/img/Vector.png'
 import arrow2 from '../../public/img/Vector (1).png'
+import { BsDisplay } from 'react-icons/bs'
 
 export function Sobre() {
+
+    class FormSubmit {
+        constructor(settings){
+            this.settings = settings;
+            this.form = document.querySelector(settings.form);
+            this.formButton = document.querySelector(settings.button);
+            if (this.form){
+                this.url = this.form.getAttribute("action");
+
+            }
+
+        }
+
+            displaySuccess() {
+                this.form.innerHTML = this.settings.success;
+            }
+
+            
+            displayError() {
+                this.form.innerHTML = this.settings.error;
+            }
+
+            getFormObject() {
+                const  getFormObject = {};
+                const  fields = this.form.querySelectorAll("[nome]");
+                fields.forEach((field) => {
+                    formObject[field.getAttribute("nome")] = field.value;
+                });   
+                return formObject;
+            }
+
+            onSubmission(event) {
+                event.preventDefault();
+                event.target.disabled = true;
+                event.target.innerText = "Enviando...";
+            }
+
+            async sendForm(event){
+            try{
+                this.onSubmission(event);
+               await fetch(this.url, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json"
+                    },
+                    body:JSON.stringify(this.getFormObject()),
+                });
+                this.displaySuccess();
+            } catch (error) {
+                this.displayError();
+
+                throw new  Error(error);
+            }
+            }
+
+            init(){
+                if (this.form) this.formButton.addEventListener("click", () => this.displaySuccess());
+            }
+       }
+
+       const formSubmit = new FormSubmit({
+        form: "[data-form]",
+        button: "[data-button]",
+        success: "<h1 class= 'success'>Mensagem enviada!</h1>",
+        error: "<h1 class= 'error'>Não foi possível enviar a mensagem.</h1>",
+       }); 
+       formSubmit.init(); 
+
     return (
+
         <>
             <section className='primeira-parte'>
                 <div className="sobre">
@@ -83,7 +154,7 @@ export function Sobre() {
                 </div>
 
                 <div className="form">
-                    <form action="https://formsubmit.co/ajax/paixaogabriel246@gmail.com" method='POST'>
+                    <form action="https://formsubmit.co/ajax/paixaogabriel246@gmail.com" method='POST' data-form>
 
                         <div className="conjunto">
                             <div className="nome">
@@ -114,11 +185,12 @@ export function Sobre() {
                             <input type="text" name='depoimento' id='depoimento' required />
                         </div>
 
-                        <button type='submit' id='botao'>Enviar</button>
+                        <button type='submit' data-button id='botao'>Enviar</button>
                     </form>
                 </div>
 
             </section >
         </>
+
     )
 }

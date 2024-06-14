@@ -189,6 +189,21 @@
     transition-timing-function: ease-out;  
  }
 
+ @media only screen and (max-width: 600px) {
+
+    .primeira-img {
+        display: none;
+    }
+    
+    .home h1 {
+        margin-top: 3.46875vw;
+        font-size: 3vw;
+        margin-left: 1.5625vw;
+        width: 100%;
+    }
+
+  }
+
 
 
 

@@ -11,7 +11,7 @@ export function Header() {
                 <div className='centro'>
 
                     <figure className='logo'>
-                        <img src="/img/logo.svg" alt="" />
+                        <Link to="/" ><img src="/img/logo.svg" alt="" /></Link>
                     </figure>
 
                     <nav className='menu-desktop'>
@@ -30,14 +30,21 @@ export function Header() {
                                 <Link to="/contato" className="nav-item">Contato</Link>
                             </li>
 
-                            {/* <li><a href="/">Home</a> </li>
-                            <li><a href="/sobre">Sobre</a></li>
-                            <li><a href="/servico">Serviços</a></li>
-                            <li><a href="/contato"> Contato</a></li> */}
-
                         </ul>
 
                     </nav>
+
+                </div>
+
+                <div className='centro-mobile'>
+
+                    <figure className='logo'>
+                        <Link to="/" ><img src="/img/logo.svg" alt="" /></Link>
+                    </figure>
+
+                    <figure className="menu-sanduiche">
+                        <Link><img src="/img/menu-sanduiche.svg" alt="" /></Link>
+                    </figure>
 
                 </div>
 

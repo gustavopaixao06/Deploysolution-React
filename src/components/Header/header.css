@@ -4,6 +4,10 @@ header > .centro{/* Usando o header para que as configurações do display flex 
 
 }
 
+.centro-mobile {
+    display: none;
+}
+
 .logo{
     padding: 2vw 0vw 0vw 2vw;
 }
@@ -49,6 +53,34 @@ header > .centro{/* Usando o header para que as configurações do display flex 
     color: white;
 
 }
+
+
+/* --------------------Versão mobile */
+
+@media only screen and (max-width: 600px) {
+
+    .centro {
+        display: none !important;
+    }
+
+    .centro-mobile {
+        display: block;
+    }
+
+    .centro-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 1vw;
+    }
+
+    .menu-sanduiche {
+        margin-top: 3vw;
+    }
+
+  }
 
 
 
