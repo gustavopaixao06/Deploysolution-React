@@ -3,7 +3,6 @@ import imgSobre from '../../public/img/sobre.png'
 import imgHistoria from '../../public/img/historia.png'
 import arrow from '../../public/img/Vector.png'
 import arrow2 from '../../public/img/Vector (1).png'
-import { BsDisplay } from 'react-icons/bs'
 
 export function Sobre() {
 
@@ -14,8 +13,8 @@ export function Sobre() {
             this.formButton = document.querySelector(settings.button);
             if (this.form){
                 this.url = this.form.getAttribute("action");
-
             }
+            this.sendForm = this.sendForm.bind(this);
 
         }
 
@@ -29,7 +28,7 @@ export function Sobre() {
             }
 
             getFormObject() {
-                const  getFormObject = {};
+                const  formObject = {};
                 const  fields = this.form.querySelectorAll("[nome]");
                 fields.forEach((field) => {
                     formObject[field.getAttribute("nome")] = field.value;
@@ -52,18 +51,19 @@ export function Sobre() {
                         "Content-Type": "application/json",
                         Accept: "application/json"
                     },
-                    body:JSON.stringify(this.getFormObject()),
+                    body: JSON.stringify(this.getFormObject()),
                 });
                 this.displaySuccess();
             } catch (error) {
                 this.displayError();
-
                 throw new  Error(error);
             }
             }
 
             init(){
-                if (this.form) this.formButton.addEventListener("click", () => this.displaySuccess());
+                if (this.form) 
+                 this.formButton.addEventListener("click", this.sendForm);
+                return this;
             }
        }
 
@@ -185,7 +185,7 @@ export function Sobre() {
                             <input type="text" name='depoimento' id='depoimento' required />
                         </div>
 
-                        <button type='submit' data-button id='botao'>Enviar</button>
+                        <button type='submit'id='botao' data-button >Enviar</button>
                     </form>
                 </div>
 
