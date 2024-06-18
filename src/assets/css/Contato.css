@@ -15,6 +15,8 @@
     width: 40%;
     height: 60vw;
     background-image: url("../../public/img/fale.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     border-top-right-radius: 1.0416666666666667vw;
     border-bottom-right-radius: 1.0416666666666667vw;
 }
