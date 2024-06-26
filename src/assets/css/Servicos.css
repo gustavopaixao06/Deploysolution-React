@@ -59,6 +59,15 @@ h5 {
     cursor: pointer;
 }
 
+.tres :link{
+    text-decoration: none;
+}
+
+
+.cartaoUm h2{
+    text-decoration: none;
+}
+
 .grupo1 {
     display: flex;
     margin-bottom: 11.71875vw;

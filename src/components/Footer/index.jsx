@@ -1,9 +1,10 @@
 import './footer.css'
-import { Link } from 'react-router-dom'
+import { Link} from "react-router-dom";
 import Whatsapp from "../../../public/img/icon-what.svg"
 import Instagram from "../../../public/img/icon-insta.svg"
 
 export function Footer() {
+
     return (
         <>
             <footer className='rodape'>
@@ -33,16 +34,16 @@ export function Footer() {
                         <div className='nav'>
                             <ul>
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/home" className='nav-item' id="buttonHome">Home</Link>
                                 </li>
                                 <li>
-                                    <Link to="/sobre">Sobre</Link>
+                                    <Link to="/sobre"  className='nav-item' id="buttonSobre">Sobre</Link>
                                 </li>
                                 <li>
-                                    <Link to="/servico">Serviços</Link>
+                                    <Link to="/servico"  className='nav-item' id="buttonServiços">Serviços</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contato">Contato</Link>
+                                    <Link to="/contato"  className='nav-item' id="buttonContato">Contato</Link>
                                 </li>
                             </ul>
                         </div>

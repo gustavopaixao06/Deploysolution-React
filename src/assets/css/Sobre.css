@@ -38,57 +38,6 @@
   width: 30vw;
  }
 
- .terceira-parte{
-    display: flex;
-    margin-bottom: 9.6041666666666665vw;
- }
-
- .cards{
-    width: 100%;
-
- }
-
- .cards{
-    transition: 0.3s;
-    width: 20%;
-    color: white;
-    border-radius: 0.5208333333333334vw;
-    margin: auto;
-    background-color: #051D3C;
-
- }
- 
-  .container {
-    padding:  2.0833333333333335vw  1.875vw   0vw;
-    margin-bottom: 2.6041666666666665vw;
-  }
-
-.container h1{
-    font-size: 1.0416666666666667vw;
-    margin-bottom: 2.0833333333333335vw;
-
-}
-
-.container p{
-    font-size: 1.0416666666666667vw;
-    line-height:  1.5625vw;
-    margin-bottom:  3.125vw;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.icon {
-  margin-top:  10.416666666666666vw;
-  color: white;
-  transform: translateX(14.322916666666666vw);
-  width: 15.625vw;
-  
-}
-
-.icon2 {
-   color: white;
-   margin-top:  10.416666666666666vw;
-   width:  15.625vw;
-  }
 
 .quarta-parte{
     width: 100%;
@@ -187,6 +136,16 @@ label{
 
 .recomendacao span{
     margin-right: 26.041666666666668vw;
+}
+
+.radio-input {
+    width: 1.5vw;  /* Largura desejada */
+    height: 1vw; /* Altura desejada */
+}
+
+.opcao, .opcao2 {
+   
+    margin-top: -0.23vw;
 }
 
 #botao {

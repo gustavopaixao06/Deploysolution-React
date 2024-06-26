@@ -1,51 +1,49 @@
 import '../assets/css/Sobre.css'
 import imgSobre from '../../public/img/sobre.png'
 import imgHistoria from '../../public/img/historia.png'
-import arrow from '../../public/img/Vector.png'
-import arrow2 from '../../public/img/Vector (1).png'
 
 export function Sobre() {
 
     class FormSubmit {
-        constructor(settings){
+        constructor(settings) {
             this.settings = settings;
             this.form = document.querySelector(settings.form);
             this.formButton = document.querySelector(settings.button);
-            if (this.form){
+            if (this.form) {
                 this.url = this.form.getAttribute("action");
             }
             this.sendForm = this.sendForm.bind(this);
 
         }
 
-            displaySuccess() {
-                this.form.innerHTML = this.settings.success;
-            }
+        displaySuccess() {
+            this.form.innerHTML = this.settings.success;
+        }
 
-            
-            displayError() {
-                this.form.innerHTML = this.settings.error;
-            }
 
-            getFormObject() {
-                const  formObject = {};
-                const  fields = this.form.querySelectorAll("[nome]");
-                fields.forEach((field) => {
-                    formObject[field.getAttribute("nome")] = field.value;
-                });   
-                return formObject;
-            }
+        displayError() {
+            this.form.innerHTML = this.settings.error;
+        }
 
-            onSubmission(event) {
-                event.preventDefault();
-                event.target.disabled = true;
-                event.target.innerText = "Enviando...";
-            }
+        getFormObject() {
+            const formObject = {};
+            const fields = this.form.querySelectorAll("[nome]");
+            fields.forEach((field) => {
+                formObject[field.getAttribute("nome")] = field.value;
+            });
+            return formObject;
+        }
 
-            async sendForm(event){
-            try{
+        onSubmission(event) {
+            event.preventDefault();
+            event.target.disabled = true;
+            event.target.innerText = "Enviando...";
+        }
+
+        async sendForm(event) {
+            try {
                 this.onSubmission(event);
-               await fetch(this.url, {
+                await fetch(this.url, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -56,24 +54,24 @@ export function Sobre() {
                 this.displaySuccess();
             } catch (error) {
                 this.displayError();
-                throw new  Error(error);
+                throw new Error(error);
             }
-            }
+        }
 
-            init(){
-                if (this.form) 
-                 this.formButton.addEventListener("click", this.sendForm);
-                return this;
-            }
-       }
+        init() {
+            if (this.form)
+                this.formButton.addEventListener("click", this.sendForm);
+            return this;
+        }
+    }
 
-       const formSubmit = new FormSubmit({
+    const formSubmit = new FormSubmit({
         form: "[data-form]",
         button: "[data-button]",
         success: "<h1 class= 'success'>Mensagem enviada!</h1>",
         error: "<h1 class= 'error'>Não foi possível enviar a mensagem.</h1>",
-       }); 
-       formSubmit.init(); 
+    });
+    formSubmit.init();
 
     return (
 
@@ -101,52 +99,6 @@ export function Sobre() {
                     <img src={imgHistoria} alt="" />
                 </div>
             </section>
-
-            {/*  <section className='terceira-parte'>
-
-                <div className="icon">
-                   <img src={arrow} alt="" />
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <h1>Recomendou o serviço!</h1>
-                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
-                            você, seus serviços ou o <br /> seu negócio. <br />
-                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
-                        <h1>Giovanna Sousa</h1>
-                    </div>
-
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <h1>Recomendou o serviço!</h1>
-                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
-                            você, seus serviços ou o <br /> seu negócio. <br />
-                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
-                        <h1>Giovanna Sousa</h1>
-                    </div>
-
-                </div>
-
-                <div className="cards">
-                    <div className="container">
-                        <h1>Recomendou o serviço!</h1>
-                        <p>Este é seu espaço para <br /> depoimentos. Use este espaço <br /> para compartilhar avaliações <br /> sobre
-                            você, seus serviços ou o <br /> seu negócio. <br />
-                            Faça seus visitantes tomarem <br /> a iniciativa de falar com você!</p>
-                        <h1>Giovanna Sousa</h1>
-                    </div>
-
-                </div>
-
-                <div className="icon2">
-                <img src={arrow2} alt="" />
-                </div>
-
-
-            </section> */}
 
             <section className='quarta-parte'>
                 <div className="avaliar">
@@ -176,8 +128,8 @@ export function Sobre() {
                             <p>Você nos recomendaria aos seus amigos?</p>
                         </div>
                         <div className="recomendacao">
-                            <input type="radio" name="recomendacao" id="" /> <span className="opcao">Sim</span>
-                            <input type="radio" name="recomendacao" id="dois" /> <span className="opcao2">Não</span>
+                            <input type="radio" name="recomendacao" class="radio-input" id="um" /> <span className="opcao">Sim</span>
+                            <input type="radio" name="recomendacao" class="radio-input" id="dois" /> <span className="opcao2">Não</span>
                         </div>
                         <label htmlFor="depoimento">Deixe seu depoimento</label>
 
@@ -185,7 +137,7 @@ export function Sobre() {
                             <input type="text" name='depoimento' id='depoimento' required />
                         </div>
 
-                        <button type='submit'id='botao' data-button >Enviar</button>
+                        <button type='submit' id='botao' data-button >Enviar</button>
                     </form>
                 </div>
 

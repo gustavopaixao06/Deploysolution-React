@@ -54,6 +54,11 @@ header > .centro{/* Usando o header para que as configurações do display flex 
 
 }
 
+.check{
+    text-decoration: underline  #1e4982  !important;
+    
+}
+
 
 /* --------------------Versão mobile */
 

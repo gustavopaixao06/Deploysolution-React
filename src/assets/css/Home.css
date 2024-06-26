@@ -126,6 +126,7 @@
  
 .samsung img {
     width: 90%;
+    margin-right: 5vw;
 }
 
 .titulo {
@@ -151,11 +152,15 @@
  
  .fornecedores {
     display: flex;
-    width: calc(35.807291666666664vw * 8);
-    animation: scroll 15s linear infinite;
+    width: calc(36.807291666666664vw * 16);
+    animation: scroll 13s linear infinite;
  }
  .samsung{
     margin-right: 6.510416666666667vw;
+ }
+
+ .samsung:hover{
+    border-color: #FFFF;
  }
 
  .fornecedores:hover{
@@ -167,7 +172,7 @@
         transform:  translateX(0);
     }
     100%{
-        transform: translateX(calc( -16.276041666666668vw * 4));
+        transform: translateX(calc( -16.276041666666668vw * 6.4));
     }
  }
 
@@ -184,10 +189,6 @@
     transition: 0.5s;
 }
 
- .samsung:hover{
-    width: 15vw; 
-    transition-timing-function: ease-out;  
- }
 
  @media only screen and (max-width: 600px) {
 
