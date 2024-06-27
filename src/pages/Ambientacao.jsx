@@ -1,6 +1,7 @@
 import '../assets/css/Ambientacao.css'
 import imagem2 from '../../public/img/image 17.svg'
 import { Link } from 'react-router-dom'
+import whatsapp from "/img/whatsapp-icon.png"; 
 
 
 export function Ambientacao() {
@@ -39,6 +40,12 @@ export function Ambientacao() {
                      <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div> 
         </>
     )
 }

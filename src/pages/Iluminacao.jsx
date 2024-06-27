@@ -1,13 +1,15 @@
 import '../assets/css/Iluminacao.css'
 import imagem1 from '../../public/img/imagem1.png'
 import { Link } from 'react-router-dom'
+import whatsapp from "/img/whatsapp-icon.png"; 
 
 export function Iluminacao() {
     return (
         <>
             <section className='sessao1'>
                 <div>
-                    <div className="reta"></div>
+                    <div className="falsalinha"></div>
+                    <div className="linha"></div>
                 </div>
 
                 <div className="iluminacao1">
@@ -35,6 +37,13 @@ export function Iluminacao() {
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div> 
+
         </>
     )
 }

@@ -1,6 +1,7 @@
 import '../assets/css/Sobre.css'
 import imgSobre from '../../public/img/sobre.png'
 import imgHistoria from '../../public/img/historia.png'
+import whatsapp from "/img/whatsapp-icon.png";
 
 export function Sobre() {
 
@@ -142,6 +143,13 @@ export function Sobre() {
                 </div>
 
             </section >
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>          
+
         </>
 
     )

@@ -1,13 +1,15 @@
 import '../assets/css/Wifi.css'
 import wifi from '../../public/img/wi-fi.png'
 import { Link } from 'react-router-dom'
+import whatsapp from "/img/whatsapp-icon.png";
 
 export function Wifi() {
     return (
         <>
             <section className='sessao1'>
                 <div>
-                    <div className="reta"></div>
+                    <div className="falsalinha"></div>
+                    <div className="linha"></div>
                 </div>
 
                 <div className="iluminacao">
@@ -22,14 +24,14 @@ export function Wifi() {
                 </div>
 
                 <div className="tema">
-                    <p>A Deploy oferece soluções de WiFi avançado  <br /> que garantem cobertura ampla  e 
-                        velocidade <br /> excepcional em toda a  sua casa ou escritório. <br /> Com nossa 
+                    <p>A Deploy oferece soluções de WiFi avançado  <br /> que garantem cobertura ampla  e
+                        velocidade <br /> excepcional em toda a  sua casa ou escritório. <br /> Com nossa
                         tecnologia de ponta, você pode <br /> desfrutar de uma conexão sem fio robusta
-                         e <br /> estável, eliminando pontos cegos e áreas de <br /> sinal fraco. Nossos sistemas
-                          de WiFi avançado <br /> são projetados para suportar múltiplos disposi- <br /> tivos 
-                          simultaneamente, proporcionando uma <br /> experiência de navegação rápida e 
-                          sem interrupções, <br /> seja para streaming de vídeos em alta definição, <br /> jogos 
-                          nline, videoconferências ou navegação diária.</p>
+                        e <br /> estável, eliminando pontos cegos e áreas de <br /> sinal fraco. Nossos sistemas
+                        de WiFi avançado <br /> são projetados para suportar múltiplos disposi- <br /> tivos
+                        simultaneamente, proporcionando uma <br /> experiência de navegação rápida e
+                        sem interrupções, <br /> seja para streaming de vídeos em alta definição, <br /> jogos
+                        nline, videoconferências ou navegação diária.</p>
                 </div>
 
             </section>
@@ -39,6 +41,12 @@ export function Wifi() {
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500 }}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                    <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>
         </>
     )
 }

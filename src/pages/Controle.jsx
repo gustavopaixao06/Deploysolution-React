@@ -1,13 +1,15 @@
 import '../assets/css/Controle.css'
 import controleIluminacao from '../../public/img/controleIluminacao.png'
 import { Link } from 'react-router-dom'
+import whatsapp from "/img/whatsapp-icon.png";
 
 export function Controle() {
     return (
         <>
             <section className='sessao1'>
                 <div>
-                    <div className="reta"></div>
+                    <div className="falsalinha"></div>
+                    <div className="linha"></div>
                 </div>
 
                 <div className="iluminacao">
@@ -23,10 +25,10 @@ export function Controle() {
 
                 <div className="pesquisa">
                     <p>O controle de iluminação e persianas da Deploy <br /> oferece uma solução integrada para transformar <br /> sua casa
-                         em um ambiente inteligente e funcional. <br /> Com nossas tecnologias avançadas, você <br /> pode ajustar a iluminação
-                          e a posição <br /> das persianas de maneira sincronizada, <br /> criando o ambiente perfeito para qualquer ocasião. <br />
-                           Seja para aproveitar a luz natural durante <br /> o dia ou criar um clima acolhedor à noite, <br /> tudo pode ser 
-                           feito com facilidade <br /> através de um simples toque no seu smartphone <br /> ou tablet.</p>
+                        em um ambiente inteligente e funcional. <br /> Com nossas tecnologias avançadas, você <br /> pode ajustar a iluminação
+                        e a posição <br /> das persianas de maneira sincronizada, <br /> criando o ambiente perfeito para qualquer ocasião. <br />
+                        Seja para aproveitar a luz natural durante <br /> o dia ou criar um clima acolhedor à noite, <br /> tudo pode ser
+                        feito com facilidade <br /> através de um simples toque no seu smartphone <br /> ou tablet.</p>
                 </div>
 
             </section>
@@ -36,6 +38,12 @@ export function Controle() {
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500 }}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                    <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>
         </>
     )
 }

@@ -9,6 +9,7 @@ import yamaha from '../../public/img/Yamaha.png'
 import stealte from '../../public/img/stealte.png'
 import advanced from '../../public/img/advanced.png'
 import origin from '../../public/img/origin.png'
+import whatsapp from "/img/whatsapp-icon.png";
 import { Link } from 'react-router-dom'
 
 export function Home() {
@@ -51,9 +52,9 @@ export function Home() {
             <section className='parte-3'>
 
                 <div className="titulo">
-                <h1>Nossos Fornecedores</h1>
+                    <h1>Nossos Fornecedores</h1>
                 </div>
-                
+
                 <div className="carrossel">
 
                     <div className="fornecedores">
@@ -72,7 +73,7 @@ export function Home() {
                         <div className="samsung">
                             <a href="https://www.crestron.com/" target='_blank'><img src={creston} alt="" /></a>
                         </div>
-        
+
                         <div className="samsung">
                             <a href="https://br.yamaha.com/pt/products/audio_visual/index.html" target='_blank'><img src={yamaha} alt="" /></a>
                         </div>
@@ -124,10 +125,17 @@ export function Home() {
                         </div>
                     </div>
 
-                    
+
                 </div>
 
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>
+            
         </>
     )
 }

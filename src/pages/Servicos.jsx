@@ -8,6 +8,7 @@ import rede from '../../public/img/rede.png'
 import wifi from '../../public/img/wifi.png'
 import seguranca from '../../public/img/seguranca.png'
 import { Link } from 'react-router-dom'
+import whatsapp from "/img/whatsapp-icon.png";
 
 export function Servico() {
     return (
@@ -70,6 +71,12 @@ export function Servico() {
                 </div>
 
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>         
 
         </>
     )

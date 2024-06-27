@@ -1,5 +1,6 @@
 import '../assets/css/Contato.css'
 import { FaWhatsapp } from "react-icons/fa";
+import whatsapp from "/img/whatsapp-icon.png"; 
 
 
 
@@ -114,6 +115,13 @@ export function Contato() {
                     </form>
                 </div>
             </section>
+
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
+                <img src={whatsapp} width="60" alt="aaaa" />
+                </a>
+            </div>     
+             
 
         </>
 
