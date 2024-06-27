@@ -1,3 +1,15 @@
+.seta7 img{
+    width: 2vw;
+    margin-top: 13vw;
+    transform: translateX(10vw);
+}
+
+.seta8 img{
+    width: 2vw;
+    margin-top: 13vw;
+    transform: translateX(7.5vw);
+}
+
 .iluminacao h3{
     text-align: center;
     margin-top: 1.5625vw;

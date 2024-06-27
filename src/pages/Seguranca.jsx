@@ -1,7 +1,9 @@
-import '../assets/css/Iluminacao.css'
+import '../assets/css/Seguranca.css'
 import segurancaEletronica from '../../public/img/segurancaEletronica.png'
 import { Link } from 'react-router-dom'
 import whatsapp from "/img/whatsapp-icon.png";
+import seta from "/img/Vector.png";
+import seta2 from "/img/Vector (1).png";
 
 export function Seguranca() {
     return (
@@ -19,6 +21,9 @@ export function Seguranca() {
             </section>
 
             <section className='sessao2'>
+                <div className="seta13">
+                    <Link to="/wifi"><img src={seta} alt="" /></Link>
+                </div>
                 <div className="imagem">
                     <img src={segurancaEletronica} alt="" />
                 </div>
@@ -27,10 +32,14 @@ export function Seguranca() {
                     <p>A Deploy oferece soluções completas de <br /> segurança eletrônica para proteger
                         sua <br /> residência, empresa ou propriedade. Nossos <br /> sistemas integrados incluem
                         câmeras de <br /> vigilância de alta definição, sensores de movimento, <br /> alarmes de
-                        intrusão e controle de acesso, <br /> proporcionando uma proteção abrangente contra <br />
-                        ameaças externas e internas. Com a nossa <br /> tecnologia avançada, você pode monitorar <br /> remotamente
+                        intrusão e controle de acesso, <br /> proporcionando uma proteção abrangente  <br /> contra
+                        ameaças externas e internas. Com a  <br />  nossa tecnologia avançada, você pode monitorar <br /> remotamente
                         sua propriedade em tempo real, <br /> receber alertas instantâneos em caso de atividades <br /> suspeitas
                         e até mesmo acionar as autoridades <br /> rapidamente em caso de emergência.   </p>
+                </div>
+
+                <div className="seta14">
+                    <Link to="/iluminacao"><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>

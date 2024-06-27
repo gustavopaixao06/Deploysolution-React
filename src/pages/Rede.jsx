@@ -2,6 +2,8 @@ import '../assets/css/Rede.css'
 import redeCabeada from '../../public/img/redeCabeada.png'
 import { Link } from 'react-router-dom'
 import whatsapp from "/img/whatsapp-icon.png";
+import seta from "/img/Vector.png";
+import seta2 from "/img/Vector (1).png";
 
 export function Rede() {
     return (
@@ -19,6 +21,10 @@ export function Rede() {
             </section>
 
             <section className='sessao2'>
+                <div className="seta9">
+                    <Link to="/sala"><img src={seta} alt="" /></Link>
+                </div>
+
                 <div className="imagem">
                     <img src={redeCabeada} alt="" />
                 </div>
@@ -31,6 +37,10 @@ export function Rede() {
                         problemas comuns de sinal fraco <br /> ou interferências. Nossos especialistas projetam <br />
                         e instalam sistemas de cabeamento que suportam<br /> altas taxas de transferência de
                         dados, ideal <br /> para streaming de vídeo em alta definição.</p>
+                </div>
+
+                <div className="seta10">
+                    <Link to="/wifi"><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>

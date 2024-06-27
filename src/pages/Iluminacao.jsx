@@ -1,7 +1,9 @@
 import '../assets/css/Iluminacao.css'
 import imagem1 from '../../public/img/imagem1.png'
 import { Link } from 'react-router-dom'
-import whatsapp from "/img/whatsapp-icon.png"; 
+import whatsapp from "/img/whatsapp-icon.png";
+import seta from "/img/Vector.png";
+import seta2 from "/img/Vector (1).png";
 
 export function Iluminacao() {
     return (
@@ -19,6 +21,10 @@ export function Iluminacao() {
             </section>
 
             <section className='sessao2'>
+
+                <div className="seta">
+                    <Link to="/seguranca"><img src={seta} alt="" /></Link>
+                </div>
                 <div className="imagem">
                     <img src={imagem1} alt="" />
                 </div>
@@ -30,6 +36,10 @@ export function Iluminacao() {
                         controla todas as luzes da sua <br /> casa, ajustando intensidade, cor e <br /> temperatura conforme sua preferência.</p>
                 </div>
 
+                <div className="seta2">
+                    <Link to="/ambientacao"><img src={seta2} alt="" /></Link>
+                </div>
+
             </section>
 
             <section className='button'>
@@ -38,11 +48,11 @@ export function Iluminacao() {
                 </div>
             </section>
 
-            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500}}>
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500 }}>
                 <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
-                <img src={whatsapp} width="60" alt="aaaa" />
+                    <img src={whatsapp} width="60" alt="aaaa" />
                 </a>
-            </div> 
+            </div>
 
         </>
     )

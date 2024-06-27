@@ -2,6 +2,8 @@ import '../assets/css/Controle.css'
 import controleIluminacao from '../../public/img/controleIluminacao.png'
 import { Link } from 'react-router-dom'
 import whatsapp from "/img/whatsapp-icon.png";
+import seta from "/img/Vector.png";
+import seta2 from "/img/Vector (1).png";
 
 export function Controle() {
     return (
@@ -19,6 +21,11 @@ export function Controle() {
             </section>
 
             <section className='sessao2'>
+
+                <div className="seta5">
+                    <Link to="/ambientacao"><img src={seta} alt="" /></Link>
+                </div>
+
                 <div className="imagem">
                     <img src={controleIluminacao} alt="" />
                 </div>
@@ -29,6 +36,10 @@ export function Controle() {
                         e a posição <br /> das persianas de maneira sincronizada, <br /> criando o ambiente perfeito para qualquer ocasião. <br />
                         Seja para aproveitar a luz natural durante <br /> o dia ou criar um clima acolhedor à noite, <br /> tudo pode ser
                         feito com facilidade <br /> através de um simples toque no seu smartphone <br /> ou tablet.</p>
+                </div>
+
+                <div className="seta6">
+                    <Link to="/sala"><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>

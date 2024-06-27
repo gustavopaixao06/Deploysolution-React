@@ -2,6 +2,8 @@ import '../assets/css/Wifi.css'
 import wifi from '../../public/img/wi-fi.png'
 import { Link } from 'react-router-dom'
 import whatsapp from "/img/whatsapp-icon.png";
+import seta from "/img/Vector.png";
+import seta2 from "/img/Vector (1).png";
 
 export function Wifi() {
     return (
@@ -19,6 +21,10 @@ export function Wifi() {
             </section>
 
             <section className='sessao2'>
+
+                <div className="seta11">
+                    <Link to="/rede"><img src={seta} alt="" /></Link>
+                </div>
                 <div className="imagem">
                     <img src={wifi} alt="" />
                 </div>
@@ -32,6 +38,10 @@ export function Wifi() {
                         simultaneamente, proporcionando uma <br /> experiência de navegação rápida e
                         sem interrupções, <br /> seja para streaming de vídeos em alta definição, <br /> jogos
                         nline, videoconferências ou navegação diária.</p>
+                </div>
+
+                <div className="seta12">
+                    <Link to="/seguranca"><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>

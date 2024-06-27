@@ -1,3 +1,15 @@
+.seta3 img{
+    width: 2vw;
+    margin-top: 13vw;
+    transform: translateX(10vw);
+}
+
+.seta4 img{
+    width: 2vw;
+    margin-top: 13vw;
+    transform: translateX(0.5vw);
+}
+
 .falsalinha{
     width: 50%;
 }
