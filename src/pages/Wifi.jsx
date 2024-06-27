@@ -51,10 +51,10 @@ export function Wifi() {
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
-
-            <div className='fixed-bottom right-100 p-3' style={{ zIndex: "6", left: "initial", top: 500 }}>
-                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'>
-                    <img src={whatsapp} width="60" alt="aaaa" />
+            
+            <div className='fixed-bottom right-100 p-3' style={{ zIndex: 6, left: 'initial', top: 500 }}>
+                <a id='botaoFixo' href="https://web.whatsapp.com/send?phone=11966413001" target='_blank' rel='noopener noreferrer'>
+                    <img src={whatsapp} className="custom-whatsapp-img" alt="WhatsApp" />
                 </a>
             </div>
         </>
