@@ -177,6 +177,24 @@ label{
     color: tomato;
 }
 
+.message-popup {
+    position: fixed;
+    bottom: 1.3020833333333333vw;
+    right: 1.3020833333333333vw;
+    background-color: #28a745;
+    color: white;
+    padding: 0.6510416666666666vw;
+    border-radius: 0.3255208333333333vw;
+    box-shadow: 0 0 0.6510416666666666vw rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+.message-popup.error {
+    background-color: #dc3545;
+}
+
+
 .custom-whatsapp-img {
     width: 4vw;  /* Ajuste a largura */
     height: 4vw;

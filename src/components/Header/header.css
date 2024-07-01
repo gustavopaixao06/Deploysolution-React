@@ -1,6 +1,8 @@
-header > .centro{/* Usando o header para que as configurações do display flex fique só no primeiro centro */
-    
-    display: flex;/* Flex permite que o elemento se adequem de acordo a tela do dispositivo */
+header>.centro {
+    /* Usando o header para que as configurações do display flex fique só no primeiro centro */
+
+    display: flex;
+    /* Flex permite que o elemento se adequem de acordo a tela do dispositivo */
 
 }
 
@@ -8,20 +10,20 @@ header > .centro{/* Usando o header para que as configurações do display flex 
     display: none;
 }
 
-.logo{
+.logo {
     padding: 2vw 0vw 0vw 2vw;
 }
 
-.logo img{
+.logo img {
     width: 12vw;
 }
 
-.menu-desktop{
+.menu-desktop {
 
     text-align: right;
     width: 90%;
     padding: 3.6vw;
-  
+
 }
 
 .menu-desktop a {
@@ -41,23 +43,99 @@ header > .centro{/* Usando o header para que as configurações do display flex 
     transition: 0.5s ease-in-out;
 }
 
-.menu-desktop a:hover::after{
+.menu-desktop a:hover::after {
     width: 100%;
 }
 
-.menu-desktop li{/* Configurando a lista */
+.menu-desktop li {
+    /* Configurando a lista */
 
-    display: inline-block;/*  deixando o menu em linha*/
+    display: inline-block;
+    /*  deixando o menu em linha*/
     font-size: 1.6vw;
     margin-right: 4vw;
     color: white;
 
 }
 
-.check{
-    text-decoration: underline  #1e4982  !important;
-    
+.check {
+    text-decoration: underline #1e4982 !important;
+
 }
+
+.mobile-click {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1vw;
+
+}
+
+.navegacao-mobile {
+    width: 60%;
+    background-color: #051D3C;
+    position: absolute;
+    right: 0;
+    height: 70vh;
+    z-index: 1;
+    top: 0;
+}
+
+.menu-mobile {
+
+    text-align: left;
+    width: 90%;
+
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vw;
+}
+
+.menu-mobile li {
+    /* Configurando a lista */
+
+    color: white;
+    list-style-type: none;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    border-bottom: 1px solid white;
+    width: 100%;
+
+}
+
+
+.nav-item {
+    margin-left: 8vw;
+}
+
+.logo-mobile img {
+    width: 12vw;
+}
+
+.logo-mobile {
+    padding: 2vw 0vw 0vw 5vw;
+}
+
+
+
+.mobile-exit {
+    text-align: right;
+    padding: 2vw 2vw;
+}
+
+.mobile-click {
+    display: none;
+}
+
+.menu-show {
+    display: none !important;
+}
+
 
 
 /* --------------------Versão mobile */
@@ -85,8 +163,13 @@ header > .centro{/* Usando o header para que as configurações do display flex 
         margin-top: 3vw;
     }
 
-  }
+    .home {
+        width: 100%;
+    }
 
+    .menu-show {
+        display: block !important;
+    }
+    
 
-
-
+}
