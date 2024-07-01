@@ -53,7 +53,7 @@ header>.centro {
     display: inline-block;
     /*  deixando o menu em linha*/
     font-size: 1.6vw;
-    margin-right: 4vw;
+    margin-right: -1vw;
     color: white;
 
 }
@@ -170,6 +170,13 @@ header>.centro {
     .menu-show {
         display: block !important;
     }
+
+    .logo img {
+        width: 16vw;
+    }
     
+    .menu-sanduiche img {
+        width: 7vw;
+    }
 
 }

@@ -201,10 +201,8 @@ label{
     transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
 }
 
-
 .custom-whatsapp-img:hover {
     transform: scale(1.1); /* Aumenta a imagem em 10% */
-    box-shadow: 0 0.20833333333333334vw 0.4166666666666667vw rgba(0, 0, 0, 0.3); /* Adiciona sombra */
 }
 
 
