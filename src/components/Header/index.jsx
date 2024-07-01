@@ -50,13 +50,13 @@ export function Header() {
             <header>
                 <div className='centro'>
                     <figure className='logo'>
-                        <Link to="/home"><img src="/img/logo.svg" alt="Logo" /></Link>
+                        <Link to="/"><img src="/img/logo.svg" alt="Logo" /></Link>
                     </figure>
 
                     <nav className='menu-desktop'>
                         <ul>
                             <li>
-                                <Link to="/home" className="nav-item" id="buttonHome">Home</Link>
+                                <Link to="/" className="nav-item" id="buttonHome">Home</Link>
                             </li>
                             <li>
                                 <Link to="/sobre" className="nav-item" id="buttonSobre">Sobre</Link>
@@ -73,7 +73,7 @@ export function Header() {
 
                 <div className='centro-mobile'>
                     <figure className='logo'>
-                        <Link to="/home"><img src="/img/logo.svg" alt="Logo" /></Link>
+                        <Link to="/"><img src="/img/logo.svg" alt="Logo" /></Link>
                     </figure>
 
                     <figure className="menu-sanduiche">
@@ -94,7 +94,7 @@ export function Header() {
                         <nav className='menu-mobile'>
                             <ul>
                                 <li>
-                                    <Link onClick={showMenuMobile} to="/home" className="nav-item" id="buttonHome">Home</Link>
+                                    <Link onClick={showMenuMobile} to="/" className="nav-item" id="buttonHome">Home</Link>
                                 </li>
                                 <li>
                                     <Link onClick={showMenuMobile} to="/sobre" className="nav-item" id="buttonSobre">Sobre</Link>

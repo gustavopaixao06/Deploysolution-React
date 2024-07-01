@@ -34,7 +34,7 @@ export function Footer() {
                         <div className='nav'>
                             <ul>
                                 <li>
-                                    <Link to="/home" className='nav-item' id="buttonHome">Home</Link>
+                                    <Link to="/" className='nav-item' id="buttonHome">Home</Link>
                                 </li>
                                 <li>
                                     <Link to="/sobre"  className='nav-item' id="buttonSobre">Sobre</Link>
