@@ -25,11 +25,11 @@ export function Iluminacao() {
                 <div className="seta">
                     <Link to="/seguranca"><img src={seta} alt="" /></Link>
                 </div>
-                <div className="imagem">
+                <div className="imagem3">
                     <img src={imagem1} alt="" />
                 </div>
 
-                <div className="artigo">
+                <div className="artigo1">
                     <p>A iluminação inteligente da Deploy vai <br /> além de simplesmente acender e apagar <br /> luzes. Com nossas soluções
                         avançadas, <br /> você pode transformar completamente a <br /> atmosfera da sua casa, criando <br /> ambientes personalizados
                         para cada <br /> momento do dia ou atividade. Através de <br /> um simples toque em seu smartphone ou <br /> tablet, você
@@ -43,7 +43,7 @@ export function Iluminacao() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

@@ -69,7 +69,7 @@
 }
 
 
-.botao-3 button{
+.botao-4 button{
     background-color: #09274F;
     border-radius:1.171875vw;
     border: none;
@@ -84,8 +84,76 @@
 
 }
 
-.botao-3 button:hover{
+.botao-4 button:hover{
     color: #09274F;
     background-color: #FFFF;
     transition: 0.5s ease-in-out;
 }
+
+
+@media only screen and (max-width: 600px) {
+    
+    .iluminacao1 h3 {
+        text-align: center;
+        margin-top: 5vw;
+        color: #6D9CD8;
+        margin-bottom: 1.0416666666666667vw;
+        font-size: 4vw;
+    } 
+
+    .iluminacao1 h1 {
+        text-align: center;
+        color: white;
+        font-size: 5vw;
+        margin-bottom: 5.208333333333333vw;
+    }   
+
+    .linha{
+        width: 100%;
+        border-top: 0.078125vw solid #bbb;
+        border-radius: 0.078125vw;
+    }
+
+    .sessao2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .seta img, .seta2 img {
+        display: none !important;
+    }
+
+    
+    
+    .imagem3 img {
+        width: 70%;
+        margin-left: 11vw;
+        margin-bottom: 4.6041666666666665vw;
+    }
+
+    .artigo1 p {
+        font-size: 3.5vw;
+        color: white;
+        text-align: center;
+        line-height: 5vw;
+        margin-top: 5vw;
+    }
+
+    .botao-4 button {
+        background-color: #09274F;
+        border-radius: 3vw;
+        color: white;
+        padding: 1.171875vw 4.0625vw;
+        text-align: center;
+        margin: 0.3125vw 0.15625vw;
+        cursor: pointer;
+        margin-left: 0.5208333333333334vw;
+        font-size: 4vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+   
+}
+    

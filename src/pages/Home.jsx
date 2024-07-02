@@ -51,7 +51,7 @@ export function Home() {
                 </div>
             </section>
 
-            <section className='parte-2-mobile'>
+            <section className='parte-2-mobile-home'>
                 <div className="imagem01-mobile">
                     <img src={imgConheca2} alt="" />
 
