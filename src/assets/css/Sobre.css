@@ -1,3 +1,12 @@
+.sobre-mobile{
+    width: 100%;
+}
+
+.sobre-mobile img{
+    width: 100%;
+    margin-bottom: 4.166666666666667vw;
+}
+
 .sobre{
     width: 100%;
 }
@@ -205,5 +214,87 @@ label{
     transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
 
+.sobre-mobile {
+    display: none !important;
+}
 
+.img-historia-mobile {
+    display: none !important;
+}
+
+/* --------------------Versão mobile -------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    
+    .sobre {
+        display: none !important;
+    }
+
+    .sobre-mobile {
+        display: block !important;
+    }
+
+    .img-historia {
+        display: none !important;
+    }
+
+    .historias {
+        width: 100%;
+    }
+
+    .historias h1 {
+        font-size: 5vw;
+    }
+
+    .historias p {
+        font-size: 3vw;
+        margin-bottom: 5vw;
+        line-height: 5vw;
+        margin-top: 5vw;
+    }
+
+    .avaliar > h1 {
+        font-size: 5vw;
+    }
+
+    .conjunto {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form {
+        margin-left: 2vw;
+        font-size: 2.5vw;
+        margin-top: 10vw ;
+    }
+
+    input {
+        width: 90vw;
+    }
+
+    .p p {
+        color: white;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+
+    .radio-input{
+        width: 4.5vw;
+        height: 3vw;
+    }
+
+    #botao {
+        background-color: #09274F;
+        border-radius: 1vw;
+        border: none;
+        color: white;
+        padding: 0.771875vw 4vw;
+        text-align: center;
+        margin-left: 35vw;
+        cursor: pointer;
+        font-size: 5vw;
+    }
+   
+}
 

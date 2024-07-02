@@ -1,6 +1,8 @@
 import '../assets/css/Sobre.css';
 import imgSobre from '../../public/img/sobre.png';
+import imgSobreMobile from '../../public/img/sobre-mobile.svg';
 import imgHistoria from '../../public/img/historia.png';
+import imgHistoriaMobile from '../../public/img/historia-mobile.svg';
 import whatsapp from "/img/whatsapp-icon.png";
 
 export function Sobre() {
@@ -90,6 +92,10 @@ export function Sobre() {
                 <div className="sobre">
                     <img src={imgSobre} alt="" />
                 </div>
+
+                <div className="sobre-mobile">
+                    <img src={imgSobreMobile} alt="" />
+                </div>
             </section>
 
             <section className='segunda-parte'>
@@ -100,6 +106,12 @@ export function Sobre() {
                 </div>
                 <div className="img-historia">
                     <img src={imgHistoria} alt="" />
+                </div>
+            </section>
+
+            <section>
+                <div className="img-historia-mobile">
+                    <img src={imgHistoriaMobile} alt="" />
                 </div>
             </section>
 
