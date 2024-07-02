@@ -72,7 +72,7 @@ export function Servico() {
 
             </section>
 
-            <div className='fixed-bottom right-100 p-3' style={{ zIndex: 6, left: 'initial',top: '20vw'}}>
+            <div className='fixed-bottom right-100 p-3' >
                 <a id='botaoFixo' href="https://web.whatsapp.com/send?phone=11966413001" target='_blank' rel='noopener noreferrer'>
                     <img src={whatsapp} className="custom-whatsapp-img" alt="WhatsApp" />
                 </a>

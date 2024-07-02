@@ -1,6 +1,7 @@
 import '../assets/css/Home.css'
 import imgHome from '../../public/img/home-img 1.png'
 import imgConheca from '../../public/img/image 7.png'
+import imgConheca2 from '../../public/img/imgConheca2.svg'
 import samsung from '../../public/img/samsung.png'
 import wave from '../../public/img/wave.png'
 import sonos from '../../public/img/sonos.png'
@@ -17,7 +18,8 @@ export function Home() {
         <>
             <section className='parte-1'>
                 <div className="home">
-                    <h1>Inteligência residencial <br /> ao alcance dos seus <br /> dedos</h1>
+                    <h1>Inteligência residencial  ao <br /> alcance dos seus <br /> dedos</h1>
+                    <h2>Inteligência residencial  ao <br /> alcance dos seu dedos</h2>
                     <p>Conheça a Deploy e desfrute da praticidade e do <br /> conforto de uma casa inteligente com nossas <br /> tecnologias de última geração.</p>
 
                     <div className='botao'>
@@ -46,6 +48,25 @@ export function Home() {
                     <div className='botao-2'>
                         <Link to="/sobre"><button>Saiba Mais</button></Link>
                     </div>
+                </div>
+            </section>
+
+            <section className='parte-2-mobile'>
+                <div className="imagem01-mobile">
+                    <img src={imgConheca2} alt="" />
+
+                    <div className="conhecer">
+                    <h1>CONHEÇA DEPLOY</h1>
+                    <p>Ágil, eficiente e honesto, a Deploy tornou-se um Serviço de
+                        automação residencial respeitável e conhecido. Nossa equipe
+                        está preparada para qualquer serviço, gerenciando projetos com a
+                        habilidade e experiência que nossos clientes esperam. Para oferecer um
+                        trabalho satisfatório aos nossos clientes, fornecemos canais de comunicação abertos durante cada projeto.</p>
+
+                    <div className='botao-2'>
+                        <Link to="/sobre"><button>Saiba Mais</button></Link>
+                    </div>
+                </div>
                 </div>
             </section>
 
@@ -130,7 +151,7 @@ export function Home() {
 
             </section>
 
-            <div className='fixed-bottom right-100 p-3' style={{ zIndex: 6, left: 'initial',top: '20vw'}}>
+            <div className='fixed-bottom right-100 p-3'>
                 <a id='botaoFixo' href="https://web.whatsapp.com/send?phone=11966413001" target='_blank' rel='noopener noreferrer'>
                     <img src={whatsapp} className="custom-whatsapp-img" alt="WhatsApp" />
                 </a>
