@@ -26,6 +26,10 @@ export function Footer() {
                                 deploy@deploysolution.com.br
                             </p>
                         </div>
+                        <div className="icons-mobile">
+                                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
+                                <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
+                            </div>
                     </section>
                     <section className="part-2">
                         <div className='titulo'>

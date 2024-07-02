@@ -132,5 +132,65 @@
     
 }
 
+.icons-mobile {
+    display: none !important;
+}
+
+/* --------------------------------versão mobile----------------------------- */
+
+
+@media only screen and (max-width: 600px) {
+    .logo-2 img {
+        width: 16vw;
+    }
+
+    .info p {
+        font-size: 2.5vw;
+    }
+
+    .info-2 p {
+        font-size: 2.5vw;
+    }
+
+    .titulo > p {
+        text-decoration: underline;
+        text-underline-offset: 0.78125vw;
+        margin-bottom: 1.5625vw;
+        font-size: 3vw;
+        margin-left: 10vw;
+    }
+
+    .nav li {
+        list-style-type: none;
+        margin-bottom: 1vw;
+        font-size: 2.5vw;
+        cursor: pointer;
+        margin-left: 10vw;
+    }
+
+    .icons-mobile {
+        display: block !important;
+        padding-left: 5vw;
+        padding-top: 2vw;
+    }
+
+    .icons-mobile img {
+        width: 5vw;
+    }
+
+    .icons-mobile a {
+        padding-right: 4vw;
+    }
+
+    .part-3 {
+        display: none !important;
+    }
+
+    .rodape h5 {
+        font-size: 2.5vw;
+    }
+
+  }
+
 
 
