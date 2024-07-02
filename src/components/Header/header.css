@@ -79,7 +79,7 @@ header>.centro {
     position: absolute;
     right: 0;
     height: 70vh;
-    z-index: 1;
+    z-index: 10;
     top: 0;
 }
 
