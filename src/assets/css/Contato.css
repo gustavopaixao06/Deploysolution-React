@@ -83,3 +83,60 @@
     background-color: #FFFF;
     transition: 0.5s ease-in-out;
 }
+
+.box-container-mobile {
+    display: none !important;
+}
+
+.form-mobile {
+    display: none !important;
+}
+
+/* --------------versão mobile------------------ */
+
+
+@media only screen and (max-width: 600px) {
+    
+    .box-container {
+        display: none !important;
+    }
+
+    .box-container-mobile {
+        display: block !important;
+        width: 100%;
+        margin-top: 5vw;
+    }
+
+    .box-container-mobile img {
+        width: 100%;
+    }
+
+    .form-mobile {
+        display: block !important;
+        margin-top: 10vw;
+    }
+
+    .inputs input, label {
+        width: 90%;
+    }
+
+    #name, #Email, #surname, #telephone, #assunto, #mensagem {
+        margin-left: 3.2552083333333335vw;
+        font-size: 4vw;
+    }
+
+    #butom {
+        background-color: #09274F;
+        border-radius: 2vw;
+        border: none;
+        color: white;
+        padding: 0.771875vw 3.0625vw;
+        text-align: center;
+        margin-left: 3.130208333333336vw;
+        cursor: pointer;
+        font-size: 4vw;
+        margin-top: 3vw;
+    }
+    
+   
+}
