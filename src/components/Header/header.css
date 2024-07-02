@@ -128,6 +128,8 @@ header>.centro {
     padding: 2vw 2vw;
 }
 
+
+
 .mobile-click {
     display: none;
 }
@@ -177,6 +179,10 @@ header>.centro {
     
     .menu-sanduiche img {
         width: 7vw;
+    }
+
+    .mobile-exit img {
+        width: 6vw;
     }
 
 }
