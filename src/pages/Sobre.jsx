@@ -7,6 +7,7 @@ import whatsapp from "/img/whatsapp-icon.png";
 
 export function Sobre() {
 
+    
     class FormSubmit {
         constructor(settings) {
             this.settings = settings;
@@ -61,10 +62,15 @@ export function Sobre() {
         }
 
         showMessage(message) {
+            alert(message); // Exibe o alerta na tela com a mensagem
+
+            // Cria um elemento de mensagem temporário
             const messageElement = document.createElement('div');
             messageElement.innerHTML = `<p>${message}</p>`;
             messageElement.className = 'message-popup';
             document.body.appendChild(messageElement);
+
+            // Remove o elemento após 3 segundos
             setTimeout(() => {
                 document.body.removeChild(messageElement);
             }, 3000);
@@ -85,6 +91,7 @@ export function Sobre() {
         errorMessage: "Não foi possível enviar a mensagem.",
     });
     formSubmit.init();
+    
 
     return (
         <>

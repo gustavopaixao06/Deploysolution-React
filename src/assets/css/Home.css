@@ -211,10 +211,10 @@
         display: none;
     }
 
-    .parte-2-mobile {
+    .parte-2-mobile-home {
         display: block !important;
     }
-
+    
     .home h1 {
         display: none !important;
     }
