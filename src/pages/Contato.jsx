@@ -2,6 +2,7 @@ import '../assets/css/Contato.css'
 import { FaWhatsapp } from "react-icons/fa";
 import contatoMobile from '../../public/img/contato-mobile.svg'
 import whatsapp from "/img/whatsapp-icon.png";
+import faleConosco from "../../public/img/faleConosco.svg"
 
 
 
@@ -86,11 +87,14 @@ export function Contato() {
 
                 <div className="faleConosco">
 
-                    <h1>Fale Conosco!!</h1>
-                    <p>Tem alguma dúvida ou quer fazer um orçamento? Entre em Contato conosco.</p>
+                    <img src={faleConosco} alt="" />
                     <div className="faleIcon">
-                        <FaWhatsapp />
-                        <p>(11)96641-3001</p>
+                        <h1>Fale Conosco!!</h1>
+                        <h5>Tem alguma dúvida ou quer fazer um orçamento? <br /> Entre em Contato conosco.</h5>
+                        <div className="frente">
+                            <FaWhatsapp className='whatsapp-icon2' />
+                            <p>(11)96641-3001</p>
+                        </div>
                     </div>
                 </div>
 

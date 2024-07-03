@@ -1,84 +1,111 @@
-.reta{
+.reta {
     width: 100%;
     border-top: 0.078125vw solid #bbb;
     border-radius: 0.078125vw;
 }
 
-.box-container{
+.box-container {
     width: 100%;
     margin-bottom: 6.510416666666667vw;
     display: flex;
     flex-direction: row;
 }
 
-.faleConosco{
-    width: 40%;
-    height: 60vw;
-    background-image: url("../../public/img/fale.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-top-right-radius: 1.0416666666666667vw;
-    border-bottom-right-radius: 1.0416666666666667vw;
-}
-
-.faleConosco h1{
-    color: white;
-    margin-left: 2.6041666666666665vw;
-    font-size: 2.6041666666666665vw;
-    padding-top: 18vw;
-}
-
-.faleConosco > p{
-    color: white;
-    margin-left: 2.6041666666666665vw;
-    font-size:  1.0416666666666667vw;
-    padding-top: 1vw;
-}
-
-.faleIcon {
-    color: white;
-    margin-left: 2.6041666666666665vw;
-    margin-top: 0.5208333333333334vw;
-    font-size: 1.6666666666666667vw;
-}
-
-.faleIcon > p{
-    color: white;
-    margin-left: 1.8229166666666667vw;
-    margin-top: -2.2395833333333335vw;
-    font-size: 1.0416666666666667vw;
-}
-
-.forms-contato{
-    width: 60%;
+.faleConosco {
    
 }
 
-.inputs input, label{
+.faleConosco img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.faleConosco {
+    position: relative; /* Define um contexto de posicionamento */
+    width: 40%; /* Ajuste conforme necessário */
+    height: 60vw;
+}
+
+.faleConosco img {
+    width: 100%;
+    height: auto;
+    position: relative; /* ou 'absolute', dependendo do layout desejado */
+    z-index: 1; /* Coloca a imagem em uma camada inferior */
+}
+
+.faleIcon {
+    position: absolute;
+    top: 19vw; /* Ajuste conforme necessário */
+    left: 5vw; /* Ajuste conforme necessário */
+    z-index: 10; /* Garante que os elementos estejam na frente da imagem */
+    color: white; /* Cor do texto para se destacar na imagem */
+}
+
+.faleIcon h1 {
+    font-size: 3vw; /* Tamanho da fonte responsivo */
+    margin-bottom: 1vw;
+
+}
+
+.faleIcon h5 {
+    font-size: 1.2vw; /* Tamanho da fonte responsivo */
+    margin-left: 0vw;
+    margin-bottom: 1vw;
+}
+
+.frente{
+    display: flex;
+}
+
+.faleIcon p {
+    font-size: 1.2vw; /* Tamanho da fonte responsivo */
+    margin-left: 0.5vw;
+}
+
+.whatsapp-icon2{
+    font-size: 1.8vw; /* Tamanho do ícone responsivo */
+}
+
+
+
+
+.forms-contato {
+    width: 60%;
+
+}
+
+.inputs input,
+label {
     width: 70%;
     display: block;
 
 }
 
-#name, #Email, #surname, #telephone, #assunto, #mensagem{
-    margin-left:  3.2552083333333335vw;
-    
+#name,
+#Email,
+#surname,
+#telephone,
+#assunto,
+#mensagem {
+    margin-left: 3.2552083333333335vw;
+
 }
 
 #butom {
     background-color: #09274F;
-    border-radius:0.5vw;
+    border-radius: 0.5vw;
     border: none;
     color: white;
-    padding: 0.771875vw  3.0625vw;
+    padding: 0.771875vw 3.0625vw;
     text-align: center;
     margin-left: 3.130208333333336vw;
     cursor: pointer;
-    font-size: 0.9625vw; 
-    margin-top:  1.3020833333333333vw;
+    font-size: 0.9625vw;
+    margin-top: 1.3020833333333333vw;
 }
 
-#butom:hover{
+#butom:hover {
     color: #09274F;
     background-color: #FFFF;
     transition: 0.5s ease-in-out;
@@ -96,7 +123,7 @@
 
 
 @media only screen and (max-width: 600px) {
-    
+
     .box-container {
         display: none !important;
     }
@@ -116,11 +143,17 @@
         margin-top: 10vw;
     }
 
-    .inputs input, label {
+    .inputs input,
+    label {
         width: 90%;
     }
 
-    #name, #Email, #surname, #telephone, #assunto, #mensagem {
+    #name,
+    #Email,
+    #surname,
+    #telephone,
+    #assunto,
+    #mensagem {
         margin-left: 3.2552083333333335vw;
         font-size: 4vw;
     }
@@ -137,6 +170,6 @@
         font-size: 4vw;
         margin-top: 3vw;
     }
-    
-   
+
+
 }
