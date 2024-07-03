@@ -14,7 +14,7 @@ export function Sala() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>SALA DE CINEMA PERSONALIZADA</h1>
                 </div>
@@ -26,11 +26,11 @@ export function Sala() {
                     <Link to="/controle"><img src={seta} alt="" /></Link>
                 </div>
 
-                <div className="imagem">
+                <div className="imagem3">
                     <img src={salaCinema} alt="" />
                 </div>
 
-                <div className="text">
+                <div className="texto2">
                     <p>Transforme sua casa em um <br /> verdadeiro cinema com a solução <br /> de sala de cinema personalizada  <br /> da Deploy.
                         Imagine assistir aos seus <br /> filmes e séries favoritos em um  <br />  ambiente projetado especificamente <br /> para
                         proporcionar a melhor  <br />  experiência audiovisual possível. Com  <br />  sistemas de som surround de alta <br />  qualidade
@@ -44,7 +44,7 @@ export function Sala() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

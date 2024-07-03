@@ -72,3 +72,11 @@
     margin-top: 2.6041666666666665vw;
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .seta5, .seta6 {
+        display: none !important;
+    }
+}

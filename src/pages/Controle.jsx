@@ -14,7 +14,7 @@ export function Controle() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>CONTROLE DE ILUMINAÇÃO E PERSIANAS</h1>
                 </div>
@@ -26,11 +26,11 @@ export function Controle() {
                     <Link to="/ambientacao"><img src={seta} alt="" /></Link>
                 </div>
 
-                <div className="imagem">
+                <div className="imagem2">
                     <img src={controleIluminacao} alt="" />
                 </div>
 
-                <div className="pesquisa">
+                <div className="texto2">
                     <p>O controle de iluminação e persianas da Deploy <br /> oferece uma solução integrada para transformar <br /> sua casa
                         em um ambiente inteligente e funcional. <br /> Com nossas tecnologias avançadas, você <br /> pode ajustar a iluminação
                         e a posição <br /> das persianas de maneira sincronizada, <br /> criando o ambiente perfeito para qualquer ocasião. <br />
@@ -45,7 +45,7 @@ export function Controle() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

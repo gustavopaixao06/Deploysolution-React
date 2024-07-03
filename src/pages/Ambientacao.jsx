@@ -15,7 +15,7 @@ export function Ambientacao() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>AMBIENTAÇÃO ÁUDIO E VÍDEO</h1>
                 </div>
@@ -47,7 +47,7 @@ export function Ambientacao() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

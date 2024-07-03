@@ -14,7 +14,7 @@ export function Seguranca() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>SEGURANÇA ELETRÔNICA</h1>
                 </div>
@@ -24,11 +24,11 @@ export function Seguranca() {
                 <div className="seta13">
                     <Link to="/wifi"><img src={seta} alt="" /></Link>
                 </div>
-                <div className="imagem">
+                <div className="imagem2">
                     <img src={segurancaEletronica} alt="" />
                 </div>
 
-                <div className="artigo">
+                <div className="texto2">
                     <p>A Deploy oferece soluções completas de <br /> segurança eletrônica para proteger
                         sua <br /> residência, empresa ou propriedade. Nossos <br /> sistemas integrados incluem
                         câmeras de <br /> vigilância de alta definição, sensores de movimento, <br /> alarmes de
@@ -45,7 +45,7 @@ export function Seguranca() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

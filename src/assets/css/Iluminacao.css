@@ -40,11 +40,11 @@
     display: flex;
 }
 
-.imagem {
+.imagem3 {
     width:50%;
 }
 
-.imagem img{
+.imagem3 img{
     width:50%;
    margin-left: 18.75vw;
    margin-bottom: 4.6041666666666665vw;
@@ -55,7 +55,7 @@
     width: 50%;
 }
 
-.artigo p{
+.artigo1 p{
     font-size: 1.4vw;
     color: white;
     line-height: 2.34375vw;
@@ -128,7 +128,7 @@
     
     
     .imagem3 img {
-        width: 70%;
+        width: 100%;
         margin-left: 11vw;
         margin-bottom: 4.6041666666666665vw;
     }
@@ -141,19 +141,19 @@
         margin-top: 5vw;
     }
 
-    .botao-4 button {
-        background-color: #09274F;
-        border-radius: 3vw;
-        color: white;
-        padding: 1.171875vw 4.0625vw;
-        text-align: center;
-        margin: 0.3125vw 0.15625vw;
-        cursor: pointer;
-        margin-left: 0.5208333333333334vw;
-        font-size: 4vw;
-        margin-top: 5vw;
-        margin-bottom: 5vw;
-    }
+        .botao-4 button {
+            background-color: #09274F;
+            border-radius: 3vw;
+            color: white;
+            padding: 1.171875vw 4.0625vw;
+            text-align: center;
+            margin: 0.3125vw 0.15625vw;
+            cursor: pointer;
+            margin-left: 0.5208333333333334vw;
+            font-size: 4vw;
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
    
 }
     

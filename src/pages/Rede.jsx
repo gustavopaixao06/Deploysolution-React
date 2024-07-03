@@ -14,7 +14,7 @@ export function Rede() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>REDE CABEADA</h1>
                 </div>
@@ -25,11 +25,11 @@ export function Rede() {
                     <Link to="/sala"><img src={seta} alt="" /></Link>
                 </div>
 
-                <div className="imagem">
+                <div className="imagem2">
                     <img src={redeCabeada} alt="" />
                 </div>
 
-                <div className="texto">
+                <div className="texto2">
                     <p>A Deploy oferece soluções de rede <br /> cabeada de alta performance que garantem <br />
                         estabilidade e velocidade para todas <br /> as suas necessidades de conectividade. <br />
                         Com uma rede cabeada bem estruturada, <br /> você pode desfrutar de uma conexão <br /> à
@@ -46,7 +46,7 @@ export function Rede() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>

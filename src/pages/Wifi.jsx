@@ -14,7 +14,7 @@ export function Wifi() {
                     <div className="linha"></div>
                 </div>
 
-                <div className="iluminacao">
+                <div className="iluminacao3">
                     <h3>Nossos Serviços</h3>
                     <h1>WI-FI AVANÇADO</h1>
                 </div>
@@ -25,11 +25,11 @@ export function Wifi() {
                 <div className="seta11">
                     <Link to="/rede"><img src={seta} alt="" /></Link>
                 </div>
-                <div className="imagem">
+                <div className="imagem2">
                     <img src={wifi} alt="" />
                 </div>
 
-                <div className="tema">
+                <div className="texto2">
                     <p>A Deploy oferece soluções de WiFi avançado  <br /> que garantem cobertura ampla  e
                         velocidade <br /> excepcional em toda a  sua casa ou escritório. <br /> Com nossa
                         tecnologia de ponta, você pode <br /> desfrutar de uma conexão sem fio robusta
@@ -47,7 +47,7 @@ export function Wifi() {
             </section>
 
             <section className='button'>
-                <div className='botao-3'>
+                <div className='botao-4'>
                     <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
