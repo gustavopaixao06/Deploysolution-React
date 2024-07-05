@@ -56,7 +56,7 @@ export function Footer() {
                         <div className='redes-sociais'>
                             <h1>Nossas redes</h1>
                             <div className="icons">
-                                <a href="https://app.whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
+                                <a href="https://whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
                                 <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
                             </div>
                         </div>
