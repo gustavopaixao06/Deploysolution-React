@@ -73,7 +73,7 @@ export function Header() {
 
                 <div className='centro-mobile'>
                     <figure className='logo'>
-                        <Link to="/"><img src="/img/logo.svg" alt="Logo" /></Link>
+                        <Link to="/"><img src="/img/logo.png" alt="Logo" /></Link>
                     </figure>
 
                     <figure className="menu-sanduiche">

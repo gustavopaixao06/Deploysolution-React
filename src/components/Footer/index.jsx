@@ -11,7 +11,7 @@ export function Footer() {
                 <div className="footer">
                     <section className='part-1'>
                         <figure className='logo-2'>
-                            <img src="/img/logo.svg" alt="" />
+                            <img src="/img/logo.png" alt="" />
                         </figure>
                         <div className='info'>
                             <p>
