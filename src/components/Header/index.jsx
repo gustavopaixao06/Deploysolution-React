@@ -50,7 +50,7 @@ export function Header() {
             <header>
                 <div className='centro'>
                     <figure className='logo'>
-                        <Link to="/"><img src="/img/logo.svg" alt="Logo" /></Link>
+                        <Link to="/"><img src="/img/logo.png" alt="Logo" /></Link>
                     </figure>
 
                     <nav className='menu-desktop'>
