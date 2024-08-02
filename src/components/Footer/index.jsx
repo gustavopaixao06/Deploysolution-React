@@ -5,8 +5,8 @@ import Instagram from "../../../public/img/icon-insta.svg"
 
 export function Footer() {
 
-    const scrollToTop = () => {
-        window.scrollToTop({
+    const scrollToTop= () => {
+        window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
@@ -54,7 +54,7 @@ export function Footer() {
                                     <Link to="/servico"  className='nav-item' id="buttonServiços" onClick={scrollToTop}>Serviços</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contato"  className='nav-item' id="buttonContato" onClick={scrollToTop}>Contato</Link>
+                                    <Link to="/contato"  className='nav-item' id="buttonContato" onClick={scrollToTop}l>Contato</Link>
                                 </li>
                             </ul>
                         </div>
@@ -63,7 +63,7 @@ export function Footer() {
                         <div className='redes-sociais'>
                             <h1>Nossas redes</h1>
                             <div className="icons">
-                                <a href="https://was.me/11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
+                                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
                                 <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
                             </div>
                         </div>
