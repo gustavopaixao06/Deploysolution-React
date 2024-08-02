@@ -35,7 +35,7 @@ export function Footer() {
                         </div>
                         <div className="icons-mobile">
                                 <a href="https://wa.me/11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
-                                <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
+                                <a href="https://wa.me/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
                             </div>
                     </section>
                     <section className="part-2">
@@ -63,7 +63,7 @@ export function Footer() {
                         <div className='redes-sociais'>
                             <h1>Nossas redes</h1>
                             <div className="icons">
-                                <a href="https://wa.me/11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
+                                <a href="https://web.whatsapp.com/send?phone=11966413001" target='_blank'><img src={Whatsapp} alt="" /></a>
                                 <a href="https://www.instagram.com/deploy_solution?igsh=MW04Y3A3emZjbXowNg==" target='_blank'><img src={Instagram} alt="" /></a>
                             </div>
                         </div>
