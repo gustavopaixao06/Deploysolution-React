@@ -5,6 +5,13 @@ import Instagram from "../../../public/img/icon-insta.svg"
 
 export function Footer() {
 
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
             <footer className='rodape'>
@@ -38,16 +45,16 @@ export function Footer() {
                         <div className='nav'>
                             <ul>
                                 <li>
-                                    <Link to="/" className='nav-item' id="buttonHome">Home</Link>
+                                    <Link to="/" className='nav-item' id="buttonHome" onClick={scrollToTop}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link to="/sobre"  className='nav-item' id="buttonSobre">Sobre</Link>
+                                    <Link to="/sobre"  className='nav-item' id="buttonSobre" onClick={scrollToTop}>Sobre</Link>
                                 </li>
                                 <li>
-                                    <Link to="/servico"  className='nav-item' id="buttonServiços">Serviços</Link>
+                                    <Link to="/servico"  className='nav-item' id="buttonServiços" onClick={scrollToTop}>Serviços</Link>
                                 </li>
                                 <li>
-                                    <Link to="/contato"  className='nav-item' id="buttonContato">Contato</Link>
+                                    <Link to="/contato"  className='nav-item' id="buttonContato" onClick={scrollToTop}l>Contato</Link>
                                 </li>
                             </ul>
                         </div>
