@@ -6,6 +6,14 @@ import seta from "/img/Vector.png";
 import seta2 from "/img/Vector (1).png";
 
 export function Iluminacao() {
+
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
     return (
         <>
             <section className='sessao1'>
@@ -23,7 +31,7 @@ export function Iluminacao() {
             <section className='sessao2'>
 
                 <div className="seta">
-                    <Link to="/seguranca"><img src={seta} alt="" /></Link>
+                    <Link to="/seguranca" onClick={scrollToTop}><img src={seta} alt="" /></Link>
                 </div>
                 <div className="imagem3">
                     <img src={imagem1} alt="" />
@@ -37,14 +45,14 @@ export function Iluminacao() {
                 </div>
 
                 <div className="seta2">
-                    <Link to="/ambientacao"><img src={seta2} alt="" /></Link>
+                    <Link to="/ambientacao" onClick={scrollToTop}><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>
 
             <section className='button'>
                 <div className='botao-4'>
-                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
+                    <Link to="/contato" onClick={scrollToTop}><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
 

@@ -14,6 +14,14 @@ import whatsapp from "/img/whatsapp-icon.png";
 import { Link } from 'react-router-dom'
 
 export function Home() {
+
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
             <section className='parte-1'>
@@ -23,7 +31,7 @@ export function Home() {
                     <p>Conheça a Deploy e desfrute da praticidade e do <br /> conforto de uma casa inteligente com nossas <br /> tecnologias de última geração.</p>
 
                     <div className='botao'>
-                        <Link to="/servico"><button>Nossos Serviços</button></Link>
+                        <Link to="/servico" onClick={scrollToTop}><button>Nossos Serviços</button></Link>
                     </div>
                 </div>
 
@@ -46,7 +54,7 @@ export function Home() {
                         trabalho satisfatório aos nossos clientes, fornecemos canais de comunicação abertos durante cada projeto.</p>
 
                     <div className='botao-2'>
-                        <Link to="/sobre"><button>Saiba Mais</button></Link>
+                        <Link to="/sobre" onClick={scrollToTop}><button>Saiba Mais</button></Link>
                     </div>
                 </div>
             </section>
@@ -64,7 +72,7 @@ export function Home() {
                         trabalho satisfatório aos nossos clientes, fornecemos canais de comunicação abertos durante cada projeto.</p>
 
                     <div className='botao-2'>
-                        <Link to="/sobre"><button>Saiba Mais</button></Link>
+                        <Link to="/sobre" onClick={scrollToTop}><button>Saiba Mais</button></Link>
                     </div>
                 </div>
                 </div>

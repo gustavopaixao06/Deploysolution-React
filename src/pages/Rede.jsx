@@ -6,6 +6,14 @@ import seta from "/img/Vector.png";
 import seta2 from "/img/Vector (1).png";
 
 export function Rede() {
+
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
             <section className='sessao1'>
@@ -22,7 +30,7 @@ export function Rede() {
 
             <section className='sessao2'>
                 <div className="seta9">
-                    <Link to="/sala"><img src={seta} alt="" /></Link>
+                    <Link to="/sala" onClick={scrollToTop}><img src={seta} alt="" /></Link>
                 </div>
 
                 <div className="imagem2">
@@ -40,14 +48,14 @@ export function Rede() {
                 </div>
 
                 <div className="seta10">
-                    <Link to="/wifi"><img src={seta2} alt="" /></Link>
+                    <Link to="/wifi" onClick={scrollToTop}><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>
 
             <section className='button'>
                 <div className='botao-4'>
-                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
+                    <Link to="/contato" onClick={scrollToTop}><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
 

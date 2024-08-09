@@ -19,6 +19,14 @@ import { Link } from 'react-router-dom'
 import whatsapp from "/img/whatsapp-icon.png";
 
 export function Servico() {
+
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
 
@@ -48,38 +56,38 @@ export function Servico() {
             <section className='tres'>
                 <div className="grupo1">
                     <div className='cartaoUm'>
-                        <Link to="/iluminacao" id='img1'><img src={iluminacao} alt="" /></Link>
-                        <Link to="/iluminacao"><h2>Iluminação Inteligente</h2></Link>
+                        <Link to="/iluminacao" id='img1' onClick={scrollToTop}><img src={iluminacao} alt="" /></Link>
+                        <Link to="/iluminacao" onClick={scrollToTop}><h2>Iluminação Inteligente</h2></Link>
                     </div>
                     <div className='cartaoDois'>
-                        <Link to="/ambientacao" id='img1'><img src={ambientacao} alt="" /></Link>
-                        <Link to="/ambientacao"><h2>Ambientação Áudio e <br /> Vídeo</h2></Link>
+                        <Link to="/ambientacao" id='img1' onClick={scrollToTop}><img src={ambientacao} alt="" /></Link>
+                        <Link to="/ambientacao" onClick={scrollToTop}><h2>Ambientação Áudio e <br /> Vídeo</h2></Link>
                     </div>
                     <div className='cartaoTres'>
-                        <Link to="/controle" id='img1'><img src={controle} alt="" /></Link>
-                        <Link to="/controle"><h2>Controle de Iluminação <br /> e Persianas</h2></Link>
+                        <Link to="/controle" id='img1' onClick={scrollToTop}><img src={controle} alt="" /></Link>
+                        <Link to="/controle" onClick={scrollToTop}><h2>Controle de Iluminação <br /> e Persianas</h2></Link>
                     </div>
                 </div>
 
                 <div className="grupo2">
                     <div className='cartaoQuatro'>
-                        <Link to="/sala" id='img1'><img src={sala} alt="" /></Link>
-                        <Link to="/sala"><h2>Sala de Cinema <br /> Personalizada</h2></Link>
+                        <Link to="/sala" id='img1' onClick={scrollToTop}><img src={sala} alt="" /></Link>
+                        <Link to="/sala" onClick={scrollToTop}><h2>Sala de Cinema <br /> Personalizada</h2></Link>
                     </div>
                     <div className='cartaoCinco'>
-                        <Link to="/rede" id='img1'><img src={rede} alt="" /></Link>
-                        <Link to="/rede"><h2>Rede Cabeada</h2></Link>
+                        <Link to="/rede" id='img1' onClick={scrollToTop}><img src={rede} alt="" /></Link>
+                        <Link to="/rede" onClick={scrollToTop}><h2>Rede Cabeada</h2></Link>
                     </div>
                     <div className='cartaoSeis'>
-                        <Link to="/wifi" id='img1'><img src={wifi} alt="" /></Link>
-                        <Link to="/wifi"><h2>Wi-Fi Avançado</h2></Link>
+                        <Link to="/wifi" id='img1' onClick={scrollToTop}><img src={wifi} alt="" /></Link>
+                        <Link to="/wifi" onClick={scrollToTop}><h2>Wi-Fi Avançado</h2></Link>
                     </div>
 
                 </div>
 
                 <div className='cartaoSete'>
-                    <Link to="/seguranca" id='img1'><img src={seguranca} alt="" /></Link>
-                    <Link to="/seguranca"><h2>Segurança Eletrônica</h2></Link>
+                    <Link to="/seguranca" id='img1' onClick={scrollToTop}><img src={seguranca} alt="" /></Link>
+                    <Link to="/seguranca" onClick={scrollToTop}><h2>Segurança Eletrônica</h2></Link>
                 </div>
 
             </section>
@@ -87,22 +95,22 @@ export function Servico() {
             <section className="tres-mobile">
 
                 <div className='cartaoUm-mobile'>
-                    <Link to="/iluminacao"><img src={iluminacaoMobile} alt="" /></Link>
-                    <Link to="/ambientacao"><img src={ambientacaoMobile} alt="" /></Link>
+                    <Link to="/iluminacao" onClick={scrollToTop}><img src={iluminacaoMobile} alt="" /></Link>
+                    <Link to="/ambientacao" onClick={scrollToTop}><img src={ambientacaoMobile} alt="" /></Link>
                 </div>
 
                 <div className='cartaoUm-mobile'>
-                    <Link to="/controle"><img src={controleMobile} alt="" /></Link>
-                    <Link to="/sala"><img src={salaMobile} alt="" /></Link>
+                    <Link to="/controle" onClick={scrollToTop}><img src={controleMobile} alt="" /></Link>
+                    <Link to="/sala" onClick={scrollToTop}><img src={salaMobile} alt="" /></Link>
                 </div>
 
                 <div className='cartaoUm-mobile'>
-                    <Link to="/rede"><img src={redeMobile} alt="" /></Link>
-                    <Link to="/wifi"><img src={wifiMobile} alt="" /></Link>
+                    <Link to="/rede" onClick={scrollToTop}><img src={redeMobile} alt="" /></Link>
+                    <Link to="/wifi" onClick={scrollToTop}><img src={wifiMobile} alt="" /></Link>
                 </div>
 
                 <div className='cartaoUm-mobile'>
-                    <Link to="/seguranca"><img src={segurancaMobile} alt="" /></Link>
+                    <Link to="/seguranca" onClick={scrollToTop}><img src={segurancaMobile} alt="" /></Link>
                 </div>
 
             </section>

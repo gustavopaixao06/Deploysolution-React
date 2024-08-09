@@ -6,6 +6,14 @@ import seta from "/img/Vector.png";
 import seta2 from "/img/Vector (1).png";
 
 export function Wifi() {
+
+    const scrollToTop= () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
     return (
         <>
             <section className='sessao1'>
@@ -23,7 +31,7 @@ export function Wifi() {
             <section className='sessao2'>
 
                 <div className="seta11">
-                    <Link to="/rede"><img src={seta} alt="" /></Link>
+                    <Link to="/rede" onClick={scrollToTop}><img src={seta} alt="" /></Link>
                 </div>
                 <div className="imagem2">
                     <img src={wifi} alt="" />
@@ -41,14 +49,14 @@ export function Wifi() {
                 </div>
 
                 <div className="seta12">
-                    <Link to="/seguranca"><img src={seta2} alt="" /></Link>
+                    <Link to="/seguranca" onClick={scrollToTop}><img src={seta2} alt="" /></Link>
                 </div>
 
             </section>
 
             <section className='button'>
                 <div className='botao-4'>
-                    <Link to="/contato"><button>Faça seu orçamento aqui!</button></Link>
+                    <Link to="/contato" onClick={scrollToTop}><button>Faça seu orçamento aqui!</button></Link>
                 </div>
             </section>
             
