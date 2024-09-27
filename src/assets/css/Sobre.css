@@ -143,6 +143,10 @@ label{
     display: flex;
 }
 
+.radio-div{
+    margin: 0 2%;
+}
+
 .recomendacao span{
     margin-right: 26.041666666666668vw;
 }

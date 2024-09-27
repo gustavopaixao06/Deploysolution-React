@@ -33,7 +33,7 @@ export function Contato() {
         setMessage('Enviando...');
 
         try {
-            const response = await fetch('http://10.92.199.9:5001/send', {
+            const response = await fetch('https://nodemailer-deploy.onrender.com/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
