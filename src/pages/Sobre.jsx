@@ -9,11 +9,12 @@ import whatsapp from "/img/whatsapp-icon.png";
 export function Sobre() {
     // Estados para armazenar os valores do formulário
     const [formData, setFormData] = useState({
-        nome: '',
+        name: '',
         email: '',
-        sobrenome: '',
-        telefone: '',
+        surname: '',
+        telephone: '',
         recomendacao: '',
+        assunto: 'Avaliação de Serviço',
         depoimento: '',
     });
 
@@ -46,11 +47,12 @@ export function Sobre() {
                 setMessage('Mensagem enviada com sucesso!');
                 // Resetando o formulário após o envio
                 setFormData({
-                    nome: '',
+                    name: '',
                     email: '',
-                    sobrenome: '',
-                    telefone: '',
+                    surname: '',
+                    telephone: '',
                     recomendacao: '',
+                    assunto: '',
                     depoimento: '',
                 });
             } else {
@@ -108,7 +110,7 @@ export function Sobre() {
                                 <label htmlFor="sobrenome">Sobrenome</label>
                                 <input type="text" name='surname' id='sobrenome' value={formData.sobrenome} onChange={handleChange} required />
                                 <label htmlFor="telefone">Telefone</label>
-                                <input type="tel" name='telefone' id='telefone' value={formData.telefone} onChange={handleChange} required />
+                                <input type="tel" name='telephone' id='telefone' value={formData.telefone} onChange={handleChange} required />
                             </div>
                         </div>
                         <div className="p">

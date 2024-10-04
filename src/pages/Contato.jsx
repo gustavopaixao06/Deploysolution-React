@@ -13,7 +13,7 @@ export function Contato() {
         surname: '',
         telephone: '',
         assunto: '',
-        mensagem: '',
+        depoimento: '',
     });
 
     // Estado para exibir mensagens de sucesso/erro
@@ -85,7 +85,7 @@ export function Contato() {
                             <label htmlFor="assunto" id='assunto'>Assunto</label>
                             <input type="text" name='assunto' id='assunto' value={formData.assunto} onChange={handleChange} required />
                             <label htmlFor="mensagem" id='mensagem'>Mensagem</label>
-                            <input type="text" name='mensagem' id='mensagem' value={formData.mensagem} onChange={handleChange} required />
+                            <input type="text" name='depoimento' id='mensagem' value={formData.mensagem} onChange={handleChange} required />
 
                             <button type='submit' id='butom' data-button>Enviar</button>
                             {/* Mensagem de sucesso/erro */}
