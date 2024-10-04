@@ -102,15 +102,15 @@ export function Sobre() {
                         <div className="conjunto">
                             <div className="nome">
                                 <label htmlFor="nome">Nome</label>
-                                <input type="text" name='name' id='nome' value={formData.nome} onChange={handleChange} required />
+                                <input type="text" name='name' id='nome' value={formData.name} onChange={handleChange} required />
                                 <label htmlFor="email">Email</label>
                                 <input type="email" name='email' id='email' value={formData.email} onChange={handleChange} required />
                             </div>
                             <div className="sobrenome">
                                 <label htmlFor="sobrenome">Sobrenome</label>
-                                <input type="text" name='surname' id='sobrenome' value={formData.sobrenome} onChange={handleChange} required />
+                                <input type="text" name='surname' id='sobrenome' value={formData.surname} onChange={handleChange} required />
                                 <label htmlFor="telefone">Telefone</label>
-                                <input type="tel" name='telephone' id='telefone' value={formData.telefone} onChange={handleChange} required />
+                                <input type="tel" name='telephone' id='telefone' value={formData.telephone} onChange={handleChange} required />
                             </div>
                         </div>
                         <div className="p">
